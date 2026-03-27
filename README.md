@@ -8,7 +8,7 @@ This repo holds course materials for the hands-on section (Weeks 10-15) of the A
 
 ## What you'll build
 
-Each of you will build a personalized AI workflow connected to your real work — whether that's your day job, your dissertation research, or both. By Demo Day (May 8), you'll demo that workflow and walk us through the output it produces.
+Each of you will build a personalized AI workflow connected to your real work, whether that's your day job, your dissertation research, or both. By Demo Day (May 8), you'll demo that workflow and walk us through the output it produces.
 
 ## Getting started
 

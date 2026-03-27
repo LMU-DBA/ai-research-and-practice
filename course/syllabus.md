@@ -1,4 +1,4 @@
-# AI Research and Practice — Weeks 10-15 Syllabus
+# AI Research and Practice - Weeks 10-15 Syllabus
 
 **Course:** DBAD-7098-01, AI Research and Practice<br>
 **Term:** Spring 2026<br>
@@ -26,7 +26,7 @@ Weeks 1-9 with Prof. Kang covered AI concepts, strategy, ethics, and governance 
 
 ## The automation test
 
-A simple framework: AI is not making you irrelevant — it's making clear what only you can do.
+A simple framework: AI is not making you irrelevant. It's making clear what only you can do.
 
 - **Easy parts automated = good outcome.** Excel freed accountants from tallying numbers so they could focus on real problem solving.
 - **Hard parts automated = displacement.** GPS replaced the expertise London taxi drivers spent years building.
@@ -42,11 +42,11 @@ Based on [MIT Sloan research](https://mitsloan.mit.edu/ideas-made-to-matter/a-ne
 | Week | Date | Format | Time | Topic |
 |------|------|--------|------|-------|
 | 10 | Fri Mar 27 | Zoom | 11:00 AM - 12:00 PM | Introductions, tool demo, context engineering |
-| 11 | Mar 30 - Apr 3 | Async (Easter) | — | Setup: Claude Code, Wispr Flow, Granola connector. Assignment: Workflow audit |
+| 11 | Mar 30 - Apr 3 | Async (Easter) | - | Setup: Claude Code, Wispr Flow, Granola connector. Assignment: Workflow audit |
 | 12 | Fri Apr 10 | In person | 5:30 PM - 9:00 PM | Hands-on workshop: prompting, specs, data connectors |
 | 13 | Apr 13-17 | 1-on-1 meetings | TBD | Individual coaching on your workflow project |
 | 14 | Apr 20-24 | 1-on-1 meetings | TBD | Continue building, troubleshooting, refining |
-| 15 | Apr 27 - May 1 | Async | — | Submit deliverable for feedback |
+| 15 | Apr 27 - May 1 | Async | - | Submit deliverable for feedback |
 | Finals | Fri May 8 | Zoom | 9:00 AM - 10:30 AM | Demo Day: present your workflow and output |
 
 ---
@@ -58,10 +58,10 @@ Based on [MIT Sloan research](https://mitsloan.mit.edu/ideas-made-to-matter/a-ne
 Meet each other. See AI tools in action. Understand context engineering.
 
 **In class:**
-- Student introductions — who you are, your dissertation focus, your day job, where you see AI fitting in
+- Student introductions: who you are, your dissertation focus, your day job, where you see AI fitting in
 - Live demo: [Clay.com](https://clay.com) for AI-powered research prep, [Granola](https://granola.ai) + [Claude connector](https://claude.ai/customize/connectors) for pulling meeting data into AI without copy/paste
 - Walk-through: how to enable the [Granola connector in your Claude account](https://claude.ai/customize/connectors)
-- Discussion: in your field, what does AI automate — the hard parts or the easy parts?
+- Discussion: in your field, what does AI automate, the hard parts or the easy parts?
 
 **Before next week:** Complete the setup tasks and workflow audit assignment (details distributed in class).
 
