@@ -35,13 +35,42 @@ This is also your confirmation that everything is working. If you can complete t
 
 **How it works:** Claude Code is an AI agent running on your computer. Unlike a web chat, it can actually create files on your machine. When the interview is done, Claude Code will automatically save a file called `workflow-audit.md` in whatever folder you're in. That file is what you submit.
 
+**Before you begin: set up your project folder**
+
+Claude Code works inside whatever folder you start it from. Create a folder for this course so your files stay organized:
+
+**Mac (Terminal):**
+```
+mkdir ~/Documents/ai-research
+cd ~/Documents/ai-research
+claude
+```
+
+**Windows (Command Prompt):**
+```
+mkdir %USERPROFILE%\Documents\ai-research
+cd %USERPROFILE%\Documents\ai-research
+claude
+```
+
+`mkdir` creates a new folder. `cd` moves you into it. `claude` starts Claude Code. From now on, whenever you work on this course, open your terminal, `cd` into this folder, and run `claude`.
+
 **Steps:**
 
-1. Open Claude Code in your terminal
-2. Paste the prompt below
-3. Answer each question by speaking into Wispr Flow
-4. When the interview is done, Claude Code saves a `workflow-audit.md` file on your computer
-5. Find that file and submit it on Brightspace
+1. Open your terminal
+2. Navigate to your project folder: `cd ~/Documents/ai-research` (Mac) or `cd %USERPROFILE%\Documents\ai-research` (Windows)
+3. Start Claude Code: `claude`
+4. Paste the prompt below
+5. Answer each question by speaking into Wispr Flow
+6. When the interview is done, Claude Code saves a `workflow-audit.md` file in your project folder
+
+**Finding your file to submit:**
+
+The file will be at:
+- **Mac:** `~/Documents/ai-research/workflow-audit.md` (open Finder, go to Documents > ai-research)
+- **Windows:** `Documents\ai-research\workflow-audit.md` (open File Explorer, go to Documents > ai-research)
+
+Upload that file to Brightspace.
 
 ## The prompt
 
