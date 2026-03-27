@@ -41,15 +41,15 @@ Claude Code works inside whatever folder you start it from. Create a folder for 
 
 **Mac (Terminal):**
 ```
-mkdir ~/Documents/ai-research
-cd ~/Documents/ai-research
+mkdir ~/Documents/ai-research-and-practice
+cd ~/Documents/ai-research-and-practice
 claude
 ```
 
 **Windows (Command Prompt):**
 ```
-mkdir %USERPROFILE%\Documents\ai-research
-cd %USERPROFILE%\Documents\ai-research
+mkdir %USERPROFILE%\Documents\ai-research-and-practice
+cd %USERPROFILE%\Documents\ai-research-and-practice
 claude
 ```
 
@@ -58,7 +58,7 @@ claude
 **Steps:**
 
 1. Open your terminal
-2. Navigate to your project folder: `cd ~/Documents/ai-research` (Mac) or `cd %USERPROFILE%\Documents\ai-research` (Windows)
+2. Navigate to your project folder: `cd ~/Documents/ai-research-and-practice` (Mac) or `cd %USERPROFILE%\Documents\ai-research-and-practice` (Windows)
 3. Start Claude Code: `claude`
 4. Paste the prompt below
 5. Answer each question by speaking into Wispr Flow
@@ -67,8 +67,8 @@ claude
 **Finding your file to submit:**
 
 The file will be at:
-- **Mac:** `~/Documents/ai-research/workflow-audit.md` (open Finder, go to Documents > ai-research)
-- **Windows:** `Documents\ai-research\workflow-audit.md` (open File Explorer, go to Documents > ai-research)
+- **Mac:** `~/Documents/ai-research-and-practice/workflow-audit.md` (open Finder, go to Documents > ai-research-and-practice)
+- **Windows:** `Documents\ai-research-and-practice\workflow-audit.md` (open File Explorer, go to Documents > ai-research-and-practice)
 
 Upload that file to Brightspace.
 
