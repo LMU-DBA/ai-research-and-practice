@@ -8,7 +8,7 @@ The less obvious one is the process itself. Instead of you writing a report, you
 
 A few tips:
 - Use Wispr Flow to speak your answers instead of typing them. You'll say more than you'd type, and the AI will get richer context to work with.
-- Don't overthink your answers. Talk like you're explaining your work to a colleague over coffee.
+- Don't overthink your answers. Talk like you're briefing a trusted consultant who's trying to understand your work so they can help you. Be honest about what's working and what isn't.
 - Pay attention to how the AI builds on your previous answers. That's the technique. The more context it has, the better its suggestions get.
 
 ## Setup (do these first)
