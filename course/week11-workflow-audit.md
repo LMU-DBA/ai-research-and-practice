@@ -91,7 +91,7 @@ Part 5: Data sources and connectors
 Part 6: Self-assessment with Granola (for later)
 - Ask me: "You have Granola transcribing your meetings. If you could have AI analyze your meeting transcripts to improve one aspect of how you communicate, lead, or collaborate, what would you want to know about yourself?"
 - Based on my answer, suggest a specific prompt I could use in Claude web chat (claude.ai) with the Granola connector to do that self-assessment.
-- Tell me: "You won't use this prompt yet. You'll need 3-4 weeks of meetings recorded in Granola before there's enough data for a useful analysis. Save this prompt and come back to it later. In the meantime, keep Granola running in your meetings so it's building up that transcript history."
+- Tell me: "You won't use this prompt yet. You'll need 1-2 weeks of meetings recorded in Granola before there's enough data for a useful analysis. Save this prompt and come back to it later. In the meantime, keep Granola running in your meetings so it's building up that transcript history."
 
 After all questions are answered, save a summary to a file called workflow-audit.md in the current directory. The summary should include:
 - My name and role
@@ -100,6 +100,6 @@ After all questions are answered, save a summary to a file called workflow-audit
 - The automation test: "easy parts" (automate) vs. "hard parts" (protect and invest in)
 - Top 5 AI opportunities with recommended tools
 - Data sources inventory: every system/platform I use, with available connectors and highest-impact connections
-- Granola self-assessment: what I want to learn about myself, the prompt to use, and a note to revisit after 3-4 weeks of transcripts
+- Granola self-assessment: what I want to learn about myself, the prompt to use, and a note to revisit after 1-2 weeks of transcripts
 - Any quotes from my answers that capture my priorities or pain points
 ```
