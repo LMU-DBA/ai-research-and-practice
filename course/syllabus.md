@@ -33,6 +33,8 @@ A simple framework: AI is not making you irrelevant — it's making clear what o
 
 Your job is to figure out which bucket your tasks fall into, then build accordingly.
 
+Based on [MIT Sloan research](https://mitsloan.mit.edu/ideas-made-to-matter/a-new-look-how-automation-changes-value-labor) analyzing 300+ occupations over nearly 40 years.
+
 ---
 
 ## Schedule
