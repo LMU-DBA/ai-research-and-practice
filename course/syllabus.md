@@ -151,4 +151,4 @@ This section accounts for 25% of your overall course grade. Prof. Kang's section
 
 Email: gregory.lontok@lmu.edu
 Teams: Greg Lontok
-Office hours: By appointment (Zoom or in person)
+Office hours: [Schedule here](https://calendly.com/greg-lontok)

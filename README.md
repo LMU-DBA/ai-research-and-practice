@@ -26,4 +26,4 @@ Each of you will build a personalized AI workflow connected to your real work, w
 
 ## Questions
 
-Email gregory.lontok@lmu.edu or send a Teams message.
+Email gregory.lontok@lmu.edu, send a Teams message, or [schedule office hours](https://calendly.com/greg-lontok).
