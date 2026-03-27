@@ -57,8 +57,8 @@ Meet each other. See AI tools in action. Understand context engineering.
 
 **In class:**
 - Student introductions — who you are, your dissertation focus, your day job, where you see AI fitting in
-- Live demo: Clay.com for AI-powered research prep, Granola + Claude connector for pulling meeting data into AI without copy/paste
-- Walk-through: how to enable the Granola connector in your Claude account
+- Live demo: [Clay.com](https://clay.com) for AI-powered research prep, [Granola](https://granola.ai) + [Claude connector](https://claude.ai/customize/connectors) for pulling meeting data into AI without copy/paste
+- Walk-through: how to enable the [Granola connector in your Claude account](https://claude.ai/customize/connectors)
 - Discussion: in your field, what does AI automate — the hard parts or the easy parts?
 
 **Before next week:** Complete the setup tasks and workflow audit assignment (details distributed in class).
@@ -68,9 +68,9 @@ Meet each other. See AI tools in action. Understand context engineering.
 Get your tools running. Let AI interview you about your work to map where it can help.
 
 **Setup tasks:**
-1. Install Claude Code
-2. Install Wispr Flow (voice-to-text input)
-3. Enable the Granola connector in Claude (claude.ai/customize/connectors)
+1. Install [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)
+2. Install [Wispr Flow](https://wispr.com) (voice-to-text input)
+3. Enable the [Granola connector in Claude](https://claude.ai/customize/connectors)
 
 **Assignment: Workflow audit**
 Paste the provided prompt into Claude Code. AI will interview you one question at a time about your day job, your research, and your current AI usage. Use Wispr Flow to speak your answers.

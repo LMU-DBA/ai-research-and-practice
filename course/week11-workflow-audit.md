@@ -13,9 +13,9 @@ A few tips:
 
 ## Setup (do these first)
 
-1. **Install Claude Code** — Open your terminal and run: `npm install -g @anthropic-ai/claude-code` (if you don't have npm, install Node.js first from nodejs.org). Then run `claude` to start it and log in with your Claude Pro account.
-2. **Install Wispr Flow** — Download from wispr.com. This lets you speak into any text field on your computer. You'll use it to answer Claude Code's questions by voice instead of typing.
-3. **Enable the Granola connector in Claude** — Go to claude.ai/customize/connectors and connect Granola. This lets Claude access your meeting transcripts directly. Set the read-only tools to "Always allow." This is context engineering — giving AI access to your real data so it can give you better answers.
+1. **Install [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)** — Open your terminal and run: `npm install -g @anthropic-ai/claude-code` (if you don't have npm, install [Node.js](https://nodejs.org) first). Then run `claude` to start it and log in with your [Claude Pro](https://claude.ai) account.
+2. **Install [Wispr Flow](https://wispr.com)** — Download from wispr.com. This lets you speak into any text field on your computer. You'll use it to answer Claude Code's questions by voice instead of typing.
+3. **Enable the [Granola connector in Claude](https://claude.ai/customize/connectors)** — Connect Granola and set the read-only tools to "Always allow." This lets Claude access your meeting transcripts directly. This is context engineering — giving AI access to your real data so it can give you better answers.
 
 ## The workflow audit
 
