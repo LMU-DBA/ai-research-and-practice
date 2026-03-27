@@ -13,7 +13,7 @@ A few tips:
 
 ## Setup (do these first)
 
-1. **Install [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview).** Open your terminal and run: `curl -fsSL https://claude.ai/install.sh | bash` (macOS/Linux). If you use Homebrew: `brew install --cask claude-code`. Then run `claude` to start it and log in with your [Claude Pro](https://claude.ai) account.
+1. **Install [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview).** Follow the instructions on that link. This will be the biggest hurdle of the assignment, so give yourself some time. We're installing the CLI (command-line interface) version of Claude, which runs in your terminal. The terminal is the text-based app on your computer where you type commands instead of clicking buttons. On Mac, it's called Terminal. On Windows, it's called Command Prompt or PowerShell. If you've never opened it before, that's OK. The install guide walks you through it. Getting past this step is an investment. Once Claude Code is running in your terminal, you'll have access to an AI agent that can read your files, connect to your data, and build workflows that let you do your best work.
 2. **Install [Wispr Flow](https://wisprflow.ai).** Download from wisprflow.ai. This lets you speak into any text field on your computer. You'll use it to answer Claude Code's questions by voice instead of typing.
 3. **Enable the [Granola connector in Claude](https://claude.ai/customize/connectors).** Connect Granola and set the read-only tools to "Always allow." This lets Claude access your meeting transcripts directly. This is context engineering: giving AI access to your real data so it can give you better answers.
 
