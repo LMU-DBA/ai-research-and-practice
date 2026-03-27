@@ -1,9 +1,9 @@
 # AI Research and Practice — Weeks 10-15 Syllabus
 
-**Course:** DBAD-7098-01, AI Research and Practice
-**Term:** Spring 2026
-**Instructor:** Greg Lontok | gregory.lontok@lmu.edu | [LinkedIn](https://linkedin.com/in/lontok)
-**Co-Instructor (Weeks 1-9):** Martin Kang, Ph.D.
+**Course:** DBAD-7098-01, AI Research and Practice<br>
+**Term:** Spring 2026<br>
+**Instructor:** Greg Lontok | gregory.lontok@lmu.edu | [LinkedIn](https://linkedin.com/in/lontok)<br>
+**Co-Instructor (Weeks 1-9):** Martin Kang, Ph.D.<br>
 **Zoom:** https://lmula.zoom.us/my/lontok
 
 ---
