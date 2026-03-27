@@ -22,7 +22,7 @@ A few tips:
    Getting past this step is an investment. Once Claude Code is running in your terminal, you'll have access to an AI agent that can read your files, connect to your data, and build workflows that let you do your best work.
 
    If you get stuck, send me a Teams message, email me at gregory.lontok@lmu.edu, or [schedule office hours](https://calendly.com/greg-lontok).
-2. **Install [Wispr Flow](https://wisprflow.ai).** Download from wisprflow.ai. This lets you speak into any text field on your computer. You'll use it to answer Claude Code's questions by voice instead of typing.
+2. **Install [Wispr Flow](https://wisprflow.ai).** This lets you speak into any text field on your computer. You'll use it to answer Claude Code's questions by voice instead of typing.
 3. **Enable the [Granola connector in Claude](https://claude.ai/customize/connectors).** Connect Granola and set the read-only tools to "Always allow." This lets Claude access your meeting transcripts directly. This is context engineering: giving AI access to your real data so it can give you better answers.
 
 ## The workflow audit
