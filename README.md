@@ -4,7 +4,7 @@ DBAD-7098-01 | Spring 2026 | Loyola Marymount University
 
 ## What this is
 
-This repo holds course materials for the hands-on section (Weeks 10-15) of the AI Research and Practice seminar. You'll use it to access assignments, the syllabus, and any resources we share during the semester.
+This repo holds course materials for the hands-on section (Weeks 11-16) of the AI Research and Practice seminar. You'll use it to access assignments, the syllabus, and any resources we share during the semester.
 
 ## What you'll build
 
@@ -13,7 +13,7 @@ Each of you will build a personalized AI workflow connected to your real work, w
 ## Getting started
 
 1. Read the [syllabus](course/syllabus.md) for the full schedule, grading, and expectations
-2. Complete the [Week 11 workflow audit](course/week11-workflow-audit.md) during Easter week (due April 7)
+2. Complete the [Week 12 workflow audit](course/week12-workflow-audit.md) during Easter week (due April 7)
 
 ## Tools
 

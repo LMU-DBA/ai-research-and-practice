@@ -1,9 +1,9 @@
-# AI Research and Practice - Weeks 10-15 Syllabus
+# AI Research and Practice - Weeks 11-16 Syllabus
 
 **Course:** DBAD-7098-01, AI Research and Practice<br>
 **Term:** Spring 2026<br>
 **Instructor:** Greg Lontok | gregory.lontok@lmu.edu | [LinkedIn](https://linkedin.com/in/lontok)<br>
-**Co-Instructor (Weeks 1-9):** Martin Kang, Ph.D.<br>
+**Co-Instructor (Weeks 1-10):** Martin Kang, Ph.D.<br>
 **Zoom:** https://lmula.zoom.us/my/lontok
 
 ---
@@ -16,7 +16,7 @@ By the end of this section, you will have built a personalized AI workflow conne
 
 ## What this section covers
 
-Weeks 1-9 with Prof. Kang covered AI concepts, strategy, ethics, and governance through readings and discussion. This section shifts to hands-on practice. You will:
+Weeks 1-10 with Prof. Kang covered AI concepts, strategy, ethics, and governance through readings and discussion. This section shifts to hands-on practice. You will:
 
 - Set up and use AI tools (Claude Code, Granola, Wispr Flow, connectors)
 - Learn prompting workflows, spec writing, and context engineering
@@ -41,19 +41,19 @@ Based on [MIT Sloan research](https://mitsloan.mit.edu/ideas-made-to-matter/a-ne
 
 | Week | Date | Format | Time | Topic |
 |------|------|--------|------|-------|
-| 10 | Fri Mar 27 | Zoom | 11:00 AM - 12:00 PM | Introductions, tool demo, context engineering |
-| 11 | Mar 30 - Apr 3 | Async (Easter) | - | Setup: Claude Code, Wispr Flow, Granola connector. Assignment: Workflow audit |
-| 12 | Fri Apr 10 | In person | 5:30 PM - 9:00 PM | Hands-on workshop: prompting, specs, data connectors |
-| 13 | Apr 13-17 | 1-on-1 meetings | TBD | Individual coaching on your workflow project |
-| 14 | Apr 20-24 | 1-on-1 meetings | TBD | Continue building, troubleshooting, refining |
-| 15 | Apr 27 - May 1 | Async | - | Submit deliverable for feedback |
+| 11 | Fri Mar 27 | Zoom | 11:00 AM - 12:00 PM | Introductions, tool demo, context engineering |
+| 12 | Mar 30 - Apr 3 | Async (Easter) | - | Setup: Claude Code, Wispr Flow, Granola connector. Assignment: Workflow audit |
+| 13 | Fri Apr 10 | In person | 5:30 PM - 9:00 PM | Hands-on workshop: prompting, specs, data connectors |
+| 14 | Apr 13-17 | 1-on-1 meetings | TBD | Individual coaching on your workflow project |
+| 15 | Apr 20-24 | 1-on-1 meetings | TBD | Continue building, troubleshooting, refining |
+| 16 | Apr 27 - May 1 | Async | - | Submit deliverable for feedback |
 | Finals | Fri May 8 | Zoom | 9:00 AM - 10:30 AM | Demo Day: present your workflow and output |
 
 ---
 
 ## Week-by-week detail
 
-### Week 10: Introductions and context engineering (Mar 27)
+### Week 11: Introductions and context engineering (Mar 27)
 
 Meet each other. See AI tools in action. Understand context engineering.
 
@@ -65,12 +65,12 @@ Meet each other. See AI tools in action. Understand context engineering.
 
 **Before next week:** Complete the setup tasks and workflow audit assignment (details distributed in class).
 
-### Week 11: Setup and workflow audit (Mar 30 - Apr 3, async)
+### Week 12: Setup and workflow audit (Mar 30 - Apr 3, async)
 
 Get your tools running. Let AI interview you about your work to map where it can help.
 
 **Setup tasks:**
-1. Install [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) (see Week 11 assignment for install commands)
+1. Install [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) (see Week 12 assignment for install commands)
 2. Install [Wispr Flow](https://wisprflow.ai) (voice-to-text input)
 3. Enable the [Granola connector in Claude](https://claude.ai/customize/connectors)
 
@@ -85,7 +85,7 @@ Claude will save a summary file that includes:
 
 **Submit:** `workflow-audit.md` on Brightspace by Tuesday, April 7.
 
-### Week 12: Hands-on workshop (Apr 10, in person)
+### Week 13: Hands-on workshop (Apr 10, in person)
 
 Build together. This is a working session, not a lecture.
 
@@ -97,7 +97,7 @@ Build together. This is a working session, not a lecture.
 - Working with agents
 - Begin building your personalized workflow
 
-### Weeks 13-14: 1-on-1 coaching (Apr 13-24)
+### Weeks 14-15: 1-on-1 coaching (Apr 13-24)
 
 Individual meetings structured like consulting sessions. I'll review your workflow audit, understand your specific challenges, and help you build something that works for your job or research.
 
@@ -106,7 +106,7 @@ Individual meetings structured like consulting sessions. I'll review your workfl
 - A clear idea of what data sources you want to connect to
 - Questions or blockers you've hit while building
 
-### Week 15: Submit deliverable (Apr 27 - May 1)
+### Week 16: Submit deliverable (Apr 27 - May 1)
 
 Submit your workflow project for feedback before Demo Day.
 
@@ -139,12 +139,12 @@ You will use the following tools throughout this section. All are required unles
 
 ## Grading
 
-This section accounts for 25% of your overall course grade. Prof. Kang's section (Weeks 1-9) accounts for the remaining 75%.
+This section accounts for 25% of your overall course grade. Prof. Kang's section (Weeks 1-10) accounts for the remaining 75%.
 
 | Component | Weight | When |
 |-----------|--------|------|
-| Workflow audit + environment setup | 30% | Week 11 |
-| Final deliverable | 30% | Week 15 |
+| Workflow audit + environment setup | 30% | Week 12 |
+| Final deliverable | 30% | Week 16 |
 | Demo Day presentation | 40% | Finals |
 
 ## Contact
