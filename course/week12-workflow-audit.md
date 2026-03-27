@@ -37,7 +37,14 @@ This is also your confirmation that everything is working. If you can complete t
 
 **Before you begin: set up your project folder**
 
-Claude Code works inside whatever folder you start it from. Create a folder for this course so your files stay organized:
+Claude Code works inside whatever folder you start it from. First, open your terminal, then create a folder for this course so your files stay organized.
+
+**How to open your terminal:**
+
+- **Mac:** Press `Cmd + Space` to open Spotlight, type `Terminal`, and hit Enter. Or go to Applications > Utilities > Terminal.
+- **Windows:** Press `Win + R`, type `cmd`, and hit Enter. Or search for "Command Prompt" in the Start menu. (If you installed Claude Code via PowerShell, use PowerShell instead: search for "PowerShell" in the Start menu.)
+
+Once your terminal is open, run these commands:
 
 **Mac (Terminal):**
 ```
