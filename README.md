@@ -22,7 +22,7 @@ Each of you will build a personalized AI workflow connected to your real work â€
 | Claude Pro | AI assistant for research and building workflows | [claude.ai](https://claude.ai) |
 | Claude Code | Terminal-based AI agent | Included with Claude Pro |
 | Granola | AI meeting transcription and notes | [granola.ai](https://granola.ai) |
-| Wispr Flow | Voice-to-text input | [wispr.com](https://wispr.com) |
+| Wispr Flow | Voice-to-text input | [wisprflow.ai](https://wisprflow.ai) |
 
 ## Questions
 
