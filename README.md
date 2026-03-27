@@ -13,7 +13,7 @@ Each of you will build a personalized AI workflow connected to your real work, w
 ## Getting started
 
 1. Read the [syllabus](course/syllabus.md) for the full schedule, grading, and expectations
-2. Complete the [Week 11 workflow audit](course/week11-workflow-audit.md) during Easter week (due April 4)
+2. Complete the [Week 11 workflow audit](course/week11-workflow-audit.md) during Easter week (due April 7)
 
 ## Tools
 

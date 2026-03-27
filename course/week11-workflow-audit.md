@@ -90,7 +90,7 @@ Part 5: Data sources and connectors
 
 Part 6: Self-assessment with Granola
 - Ask me: "You have Granola transcribing your meetings. If you could have AI analyze your meeting transcripts to improve one aspect of how you communicate, lead, or collaborate, what would you want to know about yourself?"
-- Based on my answer, suggest a specific prompt I could use with Claude (via the Granola connector) to do that self-assessment.
+- Based on my answer, suggest a specific prompt I could use in Claude web chat (claude.ai) with the Granola connector to do that self-assessment.
 
 After all questions are answered, save a summary to a file called workflow-audit.md in the current directory. The summary should include:
 - My name and role

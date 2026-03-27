@@ -83,7 +83,7 @@ Claude will save a summary file that includes:
 - A map of your data sources with available connectors
 - A Granola self-assessment prompt you can use to coach yourself from your own meeting transcripts
 
-**Submit:** `workflow-audit.md` on Brightspace by Friday, April 4.
+**Submit:** `workflow-audit.md` on Brightspace by Tuesday, April 7.
 
 ### Week 12: Hands-on workshop (Apr 10, in person)
 
