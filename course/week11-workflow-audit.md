@@ -4,7 +4,7 @@
 
 This assignment has two purposes. The obvious one is the output, a map of your workflows and where AI can help. You'll submit that to me, and we'll use it in our 1-on-1s.
 
-The less obvious one is the process itself. Instead of you writing a report, you're going to let AI interview you. It will ask you one question at a time, listen to your answers, and build a picture of your work. By the end, you'll have experienced one of the most useful ways to work with AI: as a thought partner that draws out your own thinking and organizes it into something useful.
+The less obvious one is the process itself. Instead of you writing a report, you're going to let AI interview you. It will ask you one question at a time, listen to your answers, and build a picture of your work. By the end, you'll have experienced one of the most useful ways to work with AI: as a thought partner that draws out your own thinking and organizes it for you.
 
 A few tips:
 - Use Wispr Flow to speak your answers instead of typing them. You'll say more than you'd type, and the AI will get richer context to work with.
@@ -27,11 +27,11 @@ A few tips:
 
 ## The workflow audit
 
-The goal here is to map your workflows and identify where AI can help, both in your day job and your dissertation research. You'll use this map during our 1-on-1 consulting sessions to decide what to build.
+Map your workflows and identify where AI can help, both in your day job and your dissertation research. You'll use this map during our 1-on-1 consulting sessions to decide what to build.
 
 This is also your confirmation that everything is working. If you can complete the audit, it means Claude Code is installed, Wispr Flow is running, and you're ready for the in-person workshop on April 10.
 
-**Why Wispr Flow matters for this:** When you speak your answers instead of typing them, you naturally give more detail. You'll explain context, mention edge cases, and share frustrations you wouldn't bother typing out. That extra detail is what makes the AI's analysis better. More context in, better recommendations out. This is context engineering in practice.
+**Why Wispr Flow matters for this:** When you speak your answers instead of typing them, you naturally give more detail. You'll explain context, mention edge cases, and share frustrations you wouldn't bother typing out. That extra detail is what makes the AI's analysis better. More context in, better recommendations out.
 
 **How it works:** Claude Code is an AI agent running on your computer. Unlike a web chat, it can actually create files on your machine. When the interview is done, Claude Code will automatically save a file called `workflow-audit.md` in whatever folder you're in. That file is what you submit.
 
