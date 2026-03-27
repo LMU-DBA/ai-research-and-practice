@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Research and Practice - Week 10</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css">
+<style>
+:root {
+  --bg-deep: #0a0e1a;
+  --bg-card: #111827;
+  --bg-card-hover: #1a2332;
+  --teal: #4ECDC4;
+  --teal-dim: rgba(78, 205, 196, 0.15);
+  --amber: #F4A261;
+  --amber-dim: rgba(244, 162, 97, 0.12);
+  --text-primary: #e8eaed;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+  --border: rgba(255,255,255,0.06);
+}
+
+.reveal {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 28px;
+  color: var(--text-primary);
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal .slides section {
+  padding: 40px 60px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.reveal .slide-background {
+  background: var(--bg-deep);
+}
+
+/* Subtle radial glow on key slides */
+.slide-glow-teal::before {
+  background: radial-gradient(ellipse at 80% 20%, rgba(78, 205, 196, 0.06) 0%, transparent 60%) !important;
+  opacity: 1 !important;
+}
+
+.slide-glow-amber::before {
+  background: radial-gradient(ellipse at 20% 80%, rgba(244, 162, 97, 0.06) 0%, transparent 60%) !important;
+  opacity: 1 !important;
+}
+
+.slide-glow-center::before {
+  background: radial-gradient(ellipse at 50% 50%, rgba(78, 205, 196, 0.04) 0%, transparent 50%) !important;
+  opacity: 1 !important;
+}
+
+/* Noise texture overlay */
+.reveal .slides section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.reveal .slides section > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: 'Syne', sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  color: var(--text-primary) !important;
+  text-transform: none !important;
+  line-height: 1.1 !important;
+}
+
+.reveal h1 { font-size: 2.8em !important; }
+.reveal h2 { font-size: 2em !important; }
+.reveal h3 { font-size: 1.4em !important; }
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 0.85em;
+  font-weight: 300;
+  margin-top: 8px;
+  letter-spacing: 0.02em;
+}
+
+.label {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.55em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--teal);
+  margin-bottom: 16px;
+  display: block;
+}
+
+/* Accent text */
+.teal { color: var(--teal) !important; }
+.amber { color: var(--amber) !important; }
+
+/* Cards */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px 32px;
+  margin: 12px 0;
+}
+
+.card-teal {
+  border-left: 3px solid var(--teal);
+  background: linear-gradient(135deg, var(--teal-dim), transparent 60%);
+}
+
+.card-amber {
+  border-left: 3px solid var(--amber);
+  background: linear-gradient(135deg, var(--amber-dim), transparent 60%);
+}
+
+/* Schedule grid */
+.schedule-grid {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0;
+  font-size: 0.8em;
+  margin-top: 24px;
+}
+
+.schedule-grid .row {
+  display: contents;
+}
+
+.schedule-grid .cell {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+}
+
+.schedule-grid .week {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  color: var(--teal);
+  min-width: 80px;
+}
+
+.schedule-grid .topic {
+  color: var(--text-primary);
+}
+
+.schedule-grid .date {
+  color: var(--text-muted);
+  font-size: 0.9em;
+  text-align: right;
+  min-width: 140px;
+}
+
+.schedule-grid .row-active .cell {
+  background: var(--teal-dim);
+}
+
+/* Grading bars */
+.grade-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.grade-bar .bar-label {
+  min-width: 220px;
+  font-size: 0.85em;
+  color: var(--text-secondary);
+}
+
+.grade-bar .bar-track {
+  flex: 1;
+  height: 8px;
+  background: var(--bg-card);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.grade-bar .bar-fill-teal {
+  height: 100%;
+  background: linear-gradient(90deg, var(--teal), rgba(78, 205, 196, 0.5));
+  border-radius: 4px;
+}
+
+.grade-bar .bar-fill-amber {
+  height: 100%;
+  background: linear-gradient(90deg, var(--amber), rgba(244, 162, 97, 0.5));
+  border-radius: 4px;
+}
+
+.grade-bar .bar-pct {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 1.1em;
+  min-width: 50px;
+  text-align: right;
+}
+
+/* Big question slide */
+.big-question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.big-question h2 {
+  font-size: 2.6em !important;
+  line-height: 1.15 !important;
+  max-width: 16ch;
+  background: linear-gradient(135deg, var(--teal), var(--amber));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Quote slide */
+.quote-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 0 80px;
+}
+
+.quote-block .quote-mark {
+  font-family: 'Syne', sans-serif;
+  font-size: 6em;
+  color: var(--teal);
+  line-height: 0.5;
+  margin-bottom: 32px;
+  opacity: 0.4;
+}
+
+.quote-block blockquote {
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--text-primary);
+  line-height: 1.5;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  background: none;
+}
+
+.quote-block .attribution {
+  margin-top: 32px;
+  color: var(--text-muted);
+  font-size: 0.8em;
+}
+
+/* Number callouts */
+.number-grid {
+  display: flex;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.number-item {
+  flex: 1;
+  text-align: center;
+}
+
+.number-item .num {
+  font-family: 'Syne', sans-serif;
+  font-size: 3em;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--teal), var(--amber));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.number-item .num-label {
+  font-size: 0.75em;
+  color: var(--text-secondary);
+  margin-top: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+}
+
+.number-item .num-desc {
+  font-size: 0.8em;
+  color: var(--text-muted);
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+/* Steps */
+.steps {
+  counter-reset: step;
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+}
+
+.steps li {
+  counter-increment: step;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9em;
+  color: var(--text-secondary);
+}
+
+.steps li::before {
+  content: counter(step);
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 1.2em;
+  color: var(--teal);
+  min-width: 28px;
+}
+
+/* Intro list */
+.intro-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.intro-list li {
+  padding: 10px 0;
+  padding-left: 20px;
+  border-left: 2px solid var(--border);
+  margin-bottom: 8px;
+  color: var(--text-secondary);
+  font-size: 0.9em;
+  transition: border-color 0.3s;
+}
+
+.intro-list li strong {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* Close slide */
+.close-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.close-slide h2 {
+  font-size: 3em !important;
+}
+
+.close-slide .sub {
+  color: var(--amber);
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-top: 24px;
+  letter-spacing: 0.05em;
+}
+
+/* Pill tag */
+.pill {
+  display: inline-block;
+  font-family: 'Syne', sans-serif;
+  font-size: 0.55em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.pill-teal {
+  background: var(--teal-dim);
+  color: var(--teal);
+  border: 1px solid rgba(78, 205, 196, 0.2);
+}
+
+.pill-amber {
+  background: var(--amber-dim);
+  color: var(--amber);
+  border: 1px solid rgba(244, 162, 97, 0.2);
+}
+
+/* Connector diagram */
+.connector-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 32px 0;
+  font-size: 0.85em;
+}
+
+.connector-node {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 32px;
+  text-align: center;
+  min-width: 140px;
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.connector-node.active {
+  border-color: var(--teal);
+  background: var(--teal-dim);
+  color: var(--teal);
+  box-shadow: 0 0 20px rgba(78, 205, 196, 0.15);
+}
+
+.connector-arrow {
+  color: var(--teal);
+  font-size: 1.6em;
+  opacity: 0.6;
+}
+
+/* Top-aligned slides (for content-heavy slides) */
+.reveal section.top-align {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+}
+
+/* Vertically padded slides (sparse content, push toward center) */
+.reveal section.padded {
+  padding-top: 140px !important;
+}
+
+/* Bottom accent line */
+.accent-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--teal), var(--amber));
+  z-index: 2;
+}
+
+/* Tool logos */
+.tool-logo {
+  height: 32px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 12px;
+  filter: brightness(1.1);
+}
+
+.tool-logo-sm {
+  height: 22px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.tool-logo-lg {
+  height: 48px;
+  width: auto;
+  margin-bottom: 16px;
+  filter: brightness(1.1);
+}
+
+/* URL styling */
+.url {
+  font-family: 'DM Sans', monospace;
+  font-size: 0.75em;
+  color: var(--teal);
+  background: var(--teal-dim);
+  padding: 6px 14px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+/* Section divider */
+.section-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.section-divider h2 {
+  text-align: center !important;
+}
+
+/* Fine print */
+.fine-print {
+  font-size: 0.65em;
+  color: var(--text-muted);
+  margin-top: 24px;
+}
+
+/* Override reveal defaults */
+.reveal p { margin: 12px 0; }
+.reveal ul { margin: 12px 0; }
+.reveal section img {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<!-- Slide 1: Title -->
+<section class="slide-glow-teal">
+  <div style="display:flex;flex-direction:column;justify-content:center;height:100%">
+    <span class="label">DBAD-7098-01 &middot; Spring 2026 &middot; Weeks 10&ndash;15</span>
+    <h1>AI Research<br>and Practice</h1>
+    <div style="margin-top:40px;color:var(--text-secondary);font-size:0.85em">
+      <div>Prof. Greg Lontok</div>
+      <div style="color:var(--text-muted);margin-top:4px">gregory.lontok@lmu.edu</div>
+    </div>
+    <div style="position:absolute;bottom:40px;right:60px">
+      <div style="width:60px;height:3px;background:linear-gradient(90deg,var(--teal),var(--amber))"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Slide 2: Icebreaker -->
+<section class="slide-glow-center">
+  <div class="big-question">
+    <div>
+      <h2>In one word, how do you feel about AI?</h2>
+      <div style="margin-top:40px;color:var(--text-muted);font-size:0.7em;letter-spacing:0.05em">
+        Type your answer in the chat. Don't hit send yet.<br>
+        Wait for <span class="teal" style="font-weight:700">"Go."</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Slide 3: Introductions -->
+<section class="slide-glow-teal">
+  <span class="pill pill-teal">Introductions</span>
+  <h2>Tell us about yourself</h2>
+  <ul class="intro-list">
+    <li><strong>Your name</strong></li>
+    <li><strong>What you do</strong> (your day job)</li>
+    <li><strong>Your dissertation topic</strong></li>
+    <li><strong>Where you see AI fitting into your work</strong></li>
+  </ul>
+</section>
+
+<!-- Slide 4: The Plan -->
+<section class="top-align">
+  <span class="label">The plan</span>
+  <h2>Schedule</h2>
+  <div class="schedule-grid">
+    <div class="row row-active">
+      <div class="cell week">Week 10</div>
+      <div class="cell topic">Meet each other, see AI in action</div>
+      <div class="cell date">Today</div>
+    </div>
+    <div class="row">
+      <div class="cell week">Week 11</div>
+      <div class="cell topic">Install tools, workflow audit</div>
+      <div class="cell date">Easter, async</div>
+    </div>
+    <div class="row">
+      <div class="cell week">Week 12</div>
+      <div class="cell topic">Hands-on workshop</div>
+      <div class="cell date">Apr 10, in person</div>
+    </div>
+    <div class="row">
+      <div class="cell week">Wk 13-14</div>
+      <div class="cell topic">1-on-1 consulting sessions</div>
+      <div class="cell date">TBD</div>
+    </div>
+    <div class="row">
+      <div class="cell week">Week 15</div>
+      <div class="cell topic">Submit deliverable for feedback</div>
+      <div class="cell date">Apr 27 - May 1</div>
+    </div>
+    <div class="row">
+      <div class="cell week" style="color:var(--amber)">Finals</div>
+      <div class="cell topic"><strong>Demo Day</strong></div>
+      <div class="cell date">May 8, Zoom</div>
+    </div>
+  </div>
+</section>
+
+<!-- Slide 5: The Goal -->
+<section>
+  <div class="big-question">
+    <div>
+      <span class="label" style="text-align:center;display:block">The goal</span>
+      <h2 style="font-size:2.2em !important;max-width:20ch">Set up an AI environment that helps you do your best work</h2>
+      <p style="text-align:center;color:var(--text-muted);font-size:0.75em;margin-top:24px">
+        Whether that's at your day job or in your research.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Slide 6: Grading -->
+<section>
+  <span class="label">Grading</span>
+  <h2>25% of your overall course grade</h2>
+  <div style="margin-top:36px">
+    <div class="grade-bar">
+      <div class="bar-label">Workflow audit + setup</div>
+      <div class="bar-track"><div class="bar-fill-teal" style="width:30%"></div></div>
+      <div class="bar-pct teal">30%</div>
+    </div>
+    <div class="grade-bar">
+      <div class="bar-label">Final deliverable</div>
+      <div class="bar-track"><div class="bar-fill-teal" style="width:30%"></div></div>
+      <div class="bar-pct teal">30%</div>
+    </div>
+    <div class="grade-bar">
+      <div class="bar-label">Demo Day presentation</div>
+      <div class="bar-track"><div class="bar-fill-amber" style="width:40%"></div></div>
+      <div class="bar-pct amber">40%</div>
+    </div>
+  </div>
+</section>
+
+<!-- Slide 7: Big Question -->
+<section class="slide-glow-center">
+  <div class="big-question">
+    <h2>In your field, does AI automate the hard parts or the easy parts?</h2>
+  </div>
+</section>
+
+<!-- Slide 8: The Automation Test -->
+<section class="top-align">
+  <span class="label">The automation test</span>
+  <h2 style="font-size:1.6em !important">What gets automated matters</h2>
+  <div style="display:flex;gap:24px;margin-top:32px">
+    <div class="card card-teal" style="flex:1">
+      <h3 style="font-size:1em !important;color:var(--teal) !important;margin-bottom:12px">Easy parts automated</h3>
+      <p style="color:var(--text-secondary);font-size:0.85em;margin:0">
+        Excel freed accountants from tallying numbers so they could focus on real problem solving.
+      </p>
+      <p style="color:var(--teal);font-size:0.8em;margin-top:12px;font-weight:600">Good outcome. Jobs got better.</p>
+    </div>
+    <div class="card card-amber" style="flex:1">
+      <h3 style="font-size:1em !important;color:var(--amber) !important;margin-bottom:12px">Hard parts automated</h3>
+      <p style="color:var(--text-secondary);font-size:0.85em;margin:0">
+        GPS replaced the expertise London taxi drivers spent years building.
+      </p>
+      <p style="color:var(--amber);font-size:0.8em;margin-top:12px;font-weight:600">Displacement. The barrier to entry vanished.</p>
+    </div>
+  </div>
+  <p class="fine-print">Based on <a href="https://mitsloan.mit.edu/ideas-made-to-matter/a-new-look-how-automation-changes-value-labor" style="color:var(--text-muted)">MIT Sloan research</a> analyzing 300+ occupations over nearly 40 years.</p>
+</section>
+
+<!-- Slide 9: Three Things -->
+<section class="slide-glow-center accent-bottom">
+  <div class="section-divider">
+    <span class="label">Live demo</span>
+    <h2 style="font-size:2.4em !important">Three things AI did<br>for this meeting</h2>
+    <div class="number-grid" style="margin-top:48px">
+      <div class="number-item">
+        <div class="num">1</div>
+        <div class="num-label">Before</div>
+        <div class="num-desc">Research &amp; prep</div>
+      </div>
+      <div class="number-item">
+        <div class="num">2</div>
+        <div class="num-label">During</div>
+        <div class="num-desc">Transcription</div>
+      </div>
+      <div class="number-item">
+        <div class="num">3</div>
+        <div class="num-label">After</div>
+        <div class="num-desc">Analysis &amp; output</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Slide 10: Before -->
+<section class="slide-glow-teal padded">
+    <span class="pill pill-teal">Before the meeting</span>
+    <h2><img src="https://cdn.prod.website-files.com/61477f2c24a826836f969afe/677c0a6767557563354e34a3_Clay%20icon.png" class="tool-logo" alt="Clay">Clay.com</h2>
+    <p style="color:var(--text-secondary);font-size:0.95em;margin-top:16px">
+      AI-powered research on each of you.<br>
+      LinkedIn profiles, work history, education.
+    </p>
+    <div class="card" style="margin-top:24px">
+      <p style="color:var(--text-muted);margin:0;font-size:0.85em">
+        Hours of manual browsing, done in minutes.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Slide 11: During -->
+<section class="slide-glow-teal padded">
+    <span class="pill pill-teal">During the meeting</span>
+    <h2><img src="https://www.granola.ai/logos/rebrand/marque.svg" class="tool-logo" alt="Granola">Granola</h2>
+    <p style="color:var(--text-secondary);font-size:0.95em;margin-top:16px">
+      Transcribing our entire conversation.<br>
+      Every word, in real time.
+    </p>
+    <div class="card" style="margin-top:24px">
+      <p style="color:var(--text-muted);margin:0;font-size:0.85em">
+        You gave permission at the start of this meeting.<br>
+        Granola has been quietly capturing everything since then.
+      </p>
+    </div>
+</section>
+
+<!-- Slide 12: After -->
+<section class="slide-glow-amber padded">
+    <span class="pill pill-amber">After the meeting</span>
+    <h2><img src="https://claude.ai/images/claude-ai-logo.svg" class="tool-logo" alt="Claude">Claude + <img src="https://www.granola.ai/logos/rebrand/marque.svg" class="tool-logo" alt="Granola">Granola</h2>
+    <div class="connector-flow">
+      <div class="connector-node">Granola</div>
+      <div class="connector-arrow">&rarr;</div>
+      <div class="connector-node active">MCP Connector</div>
+      <div class="connector-arrow">&rarr;</div>
+      <div class="connector-node">Claude</div>
+    </div>
+    <p style="color:var(--text-secondary);font-size:0.9em;text-align:center">
+      Claude pulls the transcript through a connector.<br>
+      No copy/paste. No manual work.
+    </p>
+</section>
+
+<!-- Slide 13: Context Engineering -->
+<section>
+  <span class="label">The concept</span>
+  <h2>Context engineering</h2>
+  <p style="color:var(--text-secondary);font-size:0.95em;margin-top:16px">
+    Getting the right data to AI at the right time.
+  </p>
+  <div style="display:flex;gap:16px;margin-top:28px">
+    <div class="card" style="flex:1;text-align:center">
+      <div style="color:var(--teal);font-family:'Syne',sans-serif;font-weight:700;font-size:1.1em;margin-bottom:8px">Connectors</div>
+      <div style="color:var(--text-muted);font-size:0.8em">Granola, Gmail,<br>Google Drive</div>
+    </div>
+    <div class="card" style="flex:1;text-align:center">
+      <div style="color:var(--teal);font-family:'Syne',sans-serif;font-weight:700;font-size:1.1em;margin-bottom:8px">APIs</div>
+      <div style="color:var(--text-muted);font-size:0.8em">Financial data,<br>research databases</div>
+    </div>
+    <div class="card" style="flex:1;text-align:center">
+      <div style="color:var(--teal);font-family:'Syne',sans-serif;font-weight:700;font-size:1.1em;margin-bottom:8px">MCP Servers</div>
+      <div style="color:var(--text-muted);font-size:0.8em">Standard protocol<br>for AI + tools</div>
+    </div>
+  </div>
+  <p style="color:var(--amber);font-size:0.85em;margin-top:28px;font-weight:500">
+    This semester, you'll connect AI to your own data.
+  </p>
+</section>
+
+<!-- Slide 14: Enable Granola Connector -->
+<section class="slide-glow-teal">
+  <span class="pill pill-teal">Do this before next week</span>
+  <h2>Enable the Granola connector</h2>
+  <div class="url" style="margin-top:20px">claude.ai/customize/connectors</div>
+  <ol class="steps" style="margin-top:28px">
+    <li>Find <strong style="color:var(--text-primary)">Granola</strong> in the connectors list</li>
+    <li>Click <strong style="color:var(--text-primary)">Connect</strong></li>
+    <li>Set read-only tools to <strong class="teal">"Always allow"</strong></li>
+  </ol>
+</section>
+
+<!-- Slide 15: Week 11 Assignment -->
+<section>
+  <span class="pill pill-amber">Week 11 assignment</span>
+  <h2>Workflow audit</h2>
+  <div style="display:flex;gap:24px;margin-top:28px">
+    <div class="card" style="flex:1">
+      <div style="color:var(--teal);font-family:'Syne',sans-serif;font-weight:700;margin-bottom:8px">What happens</div>
+      <p style="color:var(--text-secondary);font-size:0.8em;margin:0">
+        Claude Code interviews you about your work. One question at a time. Speak your answers with Wispr Flow.
+      </p>
+    </div>
+    <div class="card" style="flex:1">
+      <div style="color:var(--amber);font-family:'Syne',sans-serif;font-weight:700;margin-bottom:8px">What you submit</div>
+      <p style="color:var(--text-secondary);font-size:0.8em;margin:0">
+        Claude Code saves a file on your computer. Submit that file on Brightspace.
+      </p>
+    </div>
+  </div>
+  <p style="color:var(--amber);font-weight:600;font-size:0.9em;margin-top:24px">Due: Tuesday, April 7</p>
+</section>
+
+<!-- Slide 16: Setup -->
+<section>
+  <span class="label">Before the audit</span>
+  <h2>Setup</h2>
+  <ol class="steps">
+    <li>Install <strong style="color:var(--text-primary)">Claude Code</strong> <span style="color:var(--text-muted)">(the CLI, runs in your terminal)</span></li>
+    <li>Install <strong style="color:var(--text-primary)">Wispr Flow</strong> <span style="color:var(--text-muted)">(voice-to-text)</span></li>
+    <li>Enable the <strong style="color:var(--text-primary)">Granola connector</strong> in Claude</li>
+  </ol>
+  <div style="margin-top:28px">
+    <div class="url">github.com/LMU-DBA/ai-research-and-practice</div>
+  </div>
+  <p style="color:var(--text-muted);font-size:0.8em;margin-top:20px">
+    Stuck? Email, Teams, or <span class="teal">calendly.com/greg-lontok</span>
+  </p>
+</section>
+
+<!-- Slide 17: Quote -->
+<section class="slide-glow-center">
+  <div class="quote-block">
+    <div class="quote-mark">&ldquo;</div>
+    <blockquote>Tell me all the times<br>I subtly avoided conflict.</blockquote>
+    <div class="attribution">
+      Dan Shipper, CEO of Every<br>
+      <span style="font-size:0.85em;color:var(--text-muted)">on what he asked AI after reviewing his Granola meeting transcripts</span>
+    </div>
+  </div>
+</section>
+
+<!-- Slide 18: Close -->
+<section class="slide-glow-center accent-bottom">
+  <div class="close-slide">
+    <h2 style="font-size:2.4em !important;max-width:18ch;line-height:1.2 !important">Your best work is ahead of you.</h2>
+    <p style="color:var(--text-secondary);font-size:0.9em;margin-top:24px;max-width:36ch;text-align:center">Set up your tools this week.<br>Let AI interview you about your work.<br>We build from there.</p>
+    <div style="margin-top:36px;display:flex;gap:24px;align-items:center">
+      <div class="url">github.com/LMU-DBA/ai-research-and-practice</div>
+    </div>
+    <p style="color:var(--text-muted);font-size:0.75em;margin-top:32px">April 10, in person. Bring a laptop.</p>
+    <div style="margin-top:24px;width:60px;height:3px;background:linear-gradient(90deg,var(--teal),var(--amber))"></div>
+  </div>
+</section>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>
+Reveal.initialize({
+  hash: true,
+  controls: true,
+  progress: true,
+  center: true,
+  transition: 'fade',
+  transitionSpeed: 'slow',
+  backgroundTransition: 'fade',
+  width: 1280,
+  height: 720,
+  margin: 0,
+});
+</script>
+</body>
+</html>
