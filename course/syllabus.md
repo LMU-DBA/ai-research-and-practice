@@ -68,7 +68,7 @@ Meet each other. See AI tools in action. Understand context engineering.
 Get your tools running. Let AI interview you about your work to map where it can help.
 
 **Setup tasks:**
-1. Install [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)
+1. Install [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) (see Week 11 assignment for install commands)
 2. Install [Wispr Flow](https://wispr.com) (voice-to-text input)
 3. Enable the [Granola connector in Claude](https://claude.ai/customize/connectors)
 
