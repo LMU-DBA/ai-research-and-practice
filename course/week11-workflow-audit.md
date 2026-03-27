@@ -27,11 +27,21 @@ A few tips:
 
 ## The workflow audit
 
+The goal here is to map your workflows and identify where AI can help, both in your day job and your dissertation research. You'll use this map during our 1-on-1 consulting sessions to decide what to build.
+
+This is also your confirmation that everything is working. If you can complete the audit, it means Claude Code is installed, Wispr Flow is running, and you're ready for the in-person workshop on April 10.
+
+**Why Wispr Flow matters for this:** When you speak your answers instead of typing them, you naturally give more detail. You'll explain context, mention edge cases, and share frustrations you wouldn't bother typing out. That extra detail is what makes the AI's analysis better. More context in, better recommendations out. This is context engineering in practice.
+
+**How it works:** Claude Code is an AI agent running on your computer. Unlike a web chat, it can actually create files on your machine. When the interview is done, Claude Code will automatically save a file called `workflow-audit.md` in whatever folder you're in. That file is what you submit.
+
+**Steps:**
+
 1. Open Claude Code in your terminal
 2. Paste the prompt below
-3. Answer each question using Wispr Flow (speak your answers)
-4. When the interview is done, Claude Code will save a `workflow-audit.md` file
-5. Submit that file to me on Brightspace
+3. Answer each question by speaking into Wispr Flow
+4. When the interview is done, Claude Code saves a `workflow-audit.md` file on your computer
+5. Find that file and submit it on Brightspace
 
 ## The prompt
 
