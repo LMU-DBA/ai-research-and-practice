@@ -45,8 +45,8 @@ Based on [MIT Sloan research](https://mitsloan.mit.edu/ideas-made-to-matter/a-ne
 | 12 | Mar 30 - Apr 3 | Async (Easter) | - | Setup: Claude Code, Wispr Flow, Granola connector. Assignment: Workflow audit |
 | 13 | Fri Apr 10 | In person | 5:30 PM - 9:00 PM | Hands-on workshop: prompting, specs, data connectors |
 | 14 | Apr 13-17 | 1-on-1 meetings | TBD | Individual coaching on your workflow project |
-| 15 | Apr 20-24 | 1-on-1 meetings | TBD | Continue building, troubleshooting, refining |
-| 16 | Apr 27 - May 1 | Async | - | Submit deliverable for feedback |
+| 15 | Apr 20-24 | 1-on-1 meetings | TBD | Individual coaching on your workflow project |
+| 16 | Apr 27 - May 1 | 1-on-1 meetings | TBD | Individual coaching on your workflow project |
 | Finals | Fri May 8 | Zoom | 9:00 AM - 10:30 AM | Demo Day: present your workflow and output |
 
 ---
@@ -97,23 +97,19 @@ Build together. This is a working session, not a lecture.
 - Working with agents
 - Begin building your personalized workflow
 
-### Weeks 14-15: 1-on-1 coaching (Apr 13-24)
+### Weeks 14-16: 1-on-1 coaching (Apr 13 - May 1)
 
-Individual meetings structured like consulting sessions. I'll review your workflow audit, understand your specific challenges, and help you build something that works for your job or research.
+Individual meetings structured like consulting sessions. I'll review your workflow audit, understand your specific challenges, and help you build something that works for your job or research. You'll demo your progress and get feedback directly in these sessions.
+
+**Requirements:**
+- Each meeting is one hour
+- You must meet with me at least twice during the three-week window
+- Schedule via [Calendly](https://calendly.com/greg-lontok/dba-ai-1-on-1)
 
 **What to have ready:**
 - Your workflow audit
 - A clear idea of what data sources you want to connect to
 - Questions or blockers you've hit while building
-
-### Week 16: Submit deliverable (Apr 27 - May 1)
-
-Submit your workflow project for feedback before Demo Day.
-
-**Submit on Brightspace:**
-- Your workflow (code, prompts, configuration, or whatever form it takes)
-- A brief write-up: what it does, what data it connects to, what output it produces
-- Any issues or open questions you want feedback on before Demo Day
 
 ### Finals: Demo Day (May 8, Zoom)
 
@@ -144,7 +140,7 @@ This section accounts for 25% of your overall course grade. Prof. Kang's section
 | Component | Weight | When |
 |-----------|--------|------|
 | Workflow audit + environment setup | 30% | Week 12 |
-| Final deliverable | 30% | Week 16 |
+| Workflow project progress (shown in 1-on-1s) | 30% | Weeks 14-16 |
 | Demo Day presentation | 40% | Finals |
 
 ## Contact

@@ -1,7 +1,5 @@
 # Week 13 setup instructions
 
-Follow these steps in order. Greg will walk through each one with you.
-
 ## 1. Install VS Code
 
 Download from: https://code.visualstudio.com/Download

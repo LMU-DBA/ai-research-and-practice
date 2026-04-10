@@ -1,7 +1,5 @@
 # Week 13 session prompts
 
-Three prompts you'll use during tonight's session. Paste each one into Claude Code when Greg tells you to.
-
 ## Prompt 1: organize your research context
 
 **When:** After you've copied your files into the research folder and Claude Code is running (around 6:35).
