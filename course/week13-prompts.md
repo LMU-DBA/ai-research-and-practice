@@ -9,13 +9,12 @@
 **Paste this into Claude Code:**
 
 ```text
-Scan all the files in this folder.
-Create a README.md that indexes everything:
-what each file is, what it contains,
-and how it relates to my research.
-Rename any files that have unclear names.
-Organize into subfolders if it makes sense.
-Explain what you're doing as you go.
+Scan all the files in this folder. Create a README.md
+that indexes everything: what each file is, what it
+contains, and how it relates to my research. Rename
+any files that have unclear names. Organize into
+subfolders if it makes sense. Explain what you're
+doing as you go.
 ```
 
 ## Prompt 2: find MCP plugins for your work
@@ -29,13 +28,12 @@ Explain what you're doing as you go.
 **Type this into Claude Code (adjust the path to match where your file is):**
 
 ```text
-@workflow-audit.md
-Based on my bottlenecks and data sources,
-recommend MCP servers or Claude Code plugins
-that would help me. For each recommendation,
-explain what it connects to and how it would
-help my specific work. Then help me install
-whichever one I choose.
+@workflow-audit.md Based on my bottlenecks and
+data sources, recommend MCP servers or Claude Code
+plugins that would help me. For each recommendation,
+explain what it connects to and how it would help
+my specific work. Then help me install whichever
+one I choose.
 ```
 
 If Claude Code reorganized your files during Prompt 1, your audit may be in a subfolder. Type `@` and start typing `workflow` — Claude Code will show you matching files wherever they are.
@@ -49,11 +47,11 @@ If Claude Code reorganized your files during Prompt 1, your audit may be in a su
 **Type this into Claude Code (same `@` reference as Prompt 2):**
 
 ```text
-@workflow-audit.md
-Identify my #1 bottleneck — the thing that
-takes the most time or is blocking my progress.
-Ask me questions until you understand the problem
-well enough to help. When you feel you have enough
-context, tell me your thinking. We'll plan together
-first, then implement based on complexity.
+@workflow-audit.md Identify my #1 bottleneck —
+the thing that takes the most time or is blocking
+my progress. Ask me questions until you understand
+the problem well enough to help. When you feel you
+have enough context, tell me your thinking. We'll
+plan together first, then implement based on
+complexity.
 ```
