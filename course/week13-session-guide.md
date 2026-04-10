@@ -21,17 +21,79 @@ Friday, April 10, 2026 | 5:30-9:00 PM | Hilton 304
 
 ## Setup
 
-Follow the setup instructions step by step: [week13-setup-instructions.md](week13-setup-instructions.md)
+### 1. Install VS Code
 
-By the end of setup you should have:
+Download from: https://code.visualstudio.com/Download
 
-1. VS Code installed and open
-2. Your `ai-research-and-practice` folder open in VS Code (you created this during Week 12)
-3. Your `workflow-audit.md` in the folder (required - two prompts tonight reference it. Download from Brightspace if you can't find it.)
-4. Your other research files copied in (papers, data, notes)
-5. Claude Code running in the VS Code terminal
-6. Granola connector enabled at https://claude.ai/customize/connectors
-7. Superpowers installed: `/plugin install superpowers@claude-plugins-official`
+- **Mac:** Download the .dmg for your chip. If you have an M1, M2, M3, or M4 Mac, pick "Apple Silicon." If you're not sure, pick "Universal." Open the .dmg and drag [VS Code](https://code.visualstudio.com) into your Applications folder.
+- **Windows:** Download the "User Installer" for x64. Run the installer and accept the defaults.
+
+Open VS Code once it's installed.
+
+### 2. Open your research folder
+
+You created an `ai-research-and-practice` folder during Week 12. Open it in VS Code: go to File > Open Folder and navigate to `Documents/ai-research-and-practice`.
+
+If you don't have the folder yet, create it first:
+
+- **Mac:** Open Finder, go to Documents, create a new folder called `ai-research-and-practice`
+- **Windows:** Open File Explorer, go to Documents, create a new folder called `ai-research-and-practice`
+
+Then open it in VS Code.
+
+### 3. Make sure your files are in the folder
+
+Check VS Code's sidebar on the left. You should see your files from Week 12 listed there.
+
+**Your workflow audit is required.** Look for `workflow-audit.md` in the sidebar. Two of tonight's prompts reference it directly. If it's not there, download it from Brightspace and copy it in.
+
+Also copy in anything else relevant to your research that isn't already there: papers, notes, data files (CSVs, spreadsheets, .dta files). **Copy, don't move.** Your originals stay where they are.
+
+### 4. Open the terminal inside VS Code
+
+Go to the menu bar: **Terminal > New Terminal**
+
+A terminal panel should appear at the bottom of VS Code. This is where you'll run [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview).
+
+### 5. Start Claude Code
+
+In the terminal, type:
+
+```
+claude
+```
+
+Quick test: ask Claude Code "What files are in this folder?" It should list whatever you just copied in.
+
+**If Claude Code doesn't start:**
+- Run `claude --version` in the terminal. If it says "command not found," Claude Code isn't installed yet. Follow the install guide at https://docs.anthropic.com/en/docs/claude-code/overview
+- If you see an auth prompt, sign in with your Claude Pro account.
+
+### 6. Connect Granola (your first connector)
+
+A connector lets Claude pull data from another tool. This one gives Claude access to your [Granola](https://granola.ai) meeting notes. Because we're setting it up at claude.ai, it works everywhere you use Claude, not just Claude Code.
+
+1. Open https://claude.ai/customize/connectors in your browser
+2. Find **Granola** and click to enable it
+3. Sign in with your Granola account when prompted
+
+Test it by going back to Claude Code and asking: "Summarize my most recent Granola meeting."
+
+If it pulls up your meeting notes, you're connected. After the break, you'll add a second connector for your research.
+
+**If Granola doesn't appear in the connector list:** Make sure you're signed into claude.ai with your Claude Pro account. Refresh the page and try again.
+
+### 7. Install Superpowers
+
+Back in your Claude Code session, type:
+
+```
+/plugin install superpowers@claude-plugins-official
+```
+
+[Superpowers](https://github.com/obra/superpowers) changes how Claude Code works. Instead of jumping straight to code, it'll think through the problem first.
+
+**If you get an error:** Try `/plugin update superpowers` instead.
 
 ---
 
@@ -39,7 +101,11 @@ By the end of setup you should have:
 
 ### Prompt 1: organize your research context
 
-Claude Code reads every file in your folder, figures out what each one is, and creates a README that indexes everything. Watch VS Code's file explorer on the left — you'll see it update in real time.
+**When:** After the break, once setup is done.
+
+**What to expect:** Claude Code reads every file in your folder, figures out what each one is, and creates a README that indexes everything. It may rename files or move things into subfolders. Watch VS Code's file explorer sidebar on the left. You'll see it update in real time.
+
+**Paste this into Claude Code:**
 
 ```text
 Scan all the files in this folder. Before making changes, tell me what you found and what you plan
@@ -49,9 +115,13 @@ unclear files and organize into subfolders if it makes sense.
 
 ### Prompt 2: find connectors for your work
 
-Claude Code reads your workflow audit and recommends connectors that match your bottlenecks. You pick one and enable it at claude.ai/customize/connectors — same way you set up Granola.
+**When:** After Prompt 1.
 
-The `@` symbol tells Claude Code to read a specific file as context. Type `@` and start typing `workflow` — it will autocomplete the path, even if the file moved during Prompt 1.
+**What to expect:** Claude Code reads your workflow audit from the Week 12 assignment and recommends connectors that match your bottlenecks. You pick one and enable it at claude.ai/customize/connectors — same way you set up Granola.
+
+**How to use it:** Type the `@` symbol in Claude Code followed by the path to your workflow audit file. The `@` tells Claude Code to read that specific file as context. Start typing `@workflow` and it should autocomplete the path for you — handy if the file moved during Prompt 1.
+
+**Type this into Claude Code (adjust the path to match where your file is):**
 
 ```text
 @workflow-audit.md Based on my bottlenecks and data sources, recommend connectors I can enable at
@@ -59,9 +129,15 @@ claude.ai/customize/connectors. For each one, explain what it connects to and ho
 specific work. Then walk me through setting up whichever one I choose.
 ```
 
+If Claude Code reorganized your files during Prompt 1, your audit may be in a subfolder. Type `@` and start typing `workflow` — Claude Code will show you matching files wherever they are.
+
 ### Prompt 3: work on your #1 bottleneck
 
-Claude Code reads your audit, finds your biggest bottleneck, and asks you questions before proposing anything. Use Wispr Flow to speak your answers — you'll say more than you'd type.
+**When:** Build time starts. You'll use this for the rest of the session.
+
+**What to expect:** Claude Code reads your workflow audit, finds your biggest bottleneck, and asks you questions before proposing anything. Use Wispr Flow to speak your answers. You'll say more than you'd type.
+
+**Type this into Claude Code (same `@` reference as Prompt 2):**
 
 ```text
 @workflow-audit.md Identify my #1 bottleneck. Ask me one question at a time until you understand
