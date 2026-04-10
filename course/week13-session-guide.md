@@ -72,7 +72,7 @@ claude
 
 Quick test: ask Claude Code "What files are in this folder?" It should list whatever you just copied in.
 
-### 6. Set output style to explanatory
+### 6. Set [output style](https://code.claude.com/docs/en/output-styles) to explanatory
 
 Type `/config` in Claude Code, select output style, and choose "explanatory." This tells Claude Code to explain its thinking as it works, not just show you the result. You'll learn more this way.
 
