@@ -24,10 +24,12 @@ Explain what you're doing as you go.
 
 **What to expect:** Claude Code will read your workflow audit from the Week 12 assignment and recommend MCP servers (data source connectors) that match your specific bottlenecks. You'll pick one and install it — your second MCP connection of the night.
 
-**Paste this into Claude Code:**
+**How to use it:** Type the `@` symbol in Claude Code followed by the path to your workflow audit file. The `@` tells Claude Code to read that specific file as context. Start typing `@workflow` and it should autocomplete the path for you — handy if the file moved during Prompt 1.
+
+**Type this into Claude Code (adjust the path to match where your file is):**
 
 ```text
-Read my workflow-audit.md file.
+@workflow-audit.md
 Based on my bottlenecks and data sources,
 recommend MCP servers or Claude Code plugins
 that would help me. For each recommendation,
@@ -36,15 +38,15 @@ help my specific work. Then help me install
 whichever one I choose.
 ```
 
+If Claude Code reorganized your files during Prompt 1, your audit may be in a subfolder. Type `@` and start typing `workflow` — Claude Code will show you matching files wherever they are.
+
 ## Prompt 3: work on your #1 bottleneck
 
 **When:** Build time starts (around 7:25). You'll use this for the next hour.
 
 **What to expect:** Claude Code will read your workflow audit, identify your biggest bottleneck, and ask you questions to understand the problem before proposing a solution. Use Wispr Flow to speak your answers — you'll give better detail by talking than typing.
 
-**How to use it:** Type the `@` symbol in Claude Code followed by the path to your workflow audit file. The `@` tells Claude Code to read that specific file as context. Start typing `@workflow` and it should autocomplete the path for you — handy if the file moved during Prompt 1.
-
-**Type this into Claude Code (adjust the path to match where your file is):**
+**Type this into Claude Code (same `@` reference as Prompt 2):**
 
 ```text
 @workflow-audit.md
@@ -55,5 +57,3 @@ well enough to help. When you feel you have enough
 context, tell me your thinking. We'll plan together
 first, then implement based on complexity.
 ```
-
-If Claude Code reorganized your files during Prompt 1, your audit may be in a subfolder. Type `@` and start typing `workflow` — Claude Code will show you matching files wherever they are.
