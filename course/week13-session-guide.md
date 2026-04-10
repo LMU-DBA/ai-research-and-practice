@@ -47,7 +47,7 @@ Then open it in VS Code.
 
 Check VS Code's sidebar on the left. You should see your files from Week 12 listed there.
 
-**Your workflow audit is required.** Look for `workflow-audit.md` in the sidebar. Two of tonight's prompts reference it directly. If it's not there, download it from Brightspace and get it into the folder. Two easy ways:
+**Your [workflow audit](https://github.com/LMU-DBA/ai-research-and-practice/blob/main/course/week12-workflow-audit.md) is required.** Look for `workflow-audit.md` in the sidebar. Two of tonight's prompts reference it directly. If it's not there, download it from Brightspace and get it into the folder. Two easy ways:
 
 - Drag the file straight into VS Code's sidebar. It'll copy it in.
 - Or open the folder in Finder (Mac) or File Explorer (Windows) and drop it there. VS Code's sidebar is just showing you what's in that folder on your computer.
