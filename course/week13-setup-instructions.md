@@ -9,44 +9,35 @@ Download from: https://code.visualstudio.com/Download
 
 Open VS Code once it's installed.
 
-## 2. Open the terminal inside VS Code
+## 2. Open your research folder
+
+You created a `dba-ai-research` folder during Week 12. Open it in VS Code: go to File > Open Folder and navigate to `Documents/dba-ai-research`.
+
+If you don't have the folder yet, create it first:
+
+- **Mac:** Open Finder, go to Documents, create a new folder called `dba-ai-research`
+- **Windows:** Open File Explorer, go to Documents, create a new folder called `dba-ai-research`
+
+Then open it in VS Code.
+
+## 3. Make sure your files are in the folder
+
+Check VS Code's sidebar on the left. You should see your files from Week 12 listed there.
+
+**Your workflow audit is required.** Look for `workflow-audit.md` in the sidebar. Two of tonight's prompts reference it directly. If it's not there, download it from Brightspace and copy it in.
+
+Also copy in anything else relevant to your research that isn't already there: papers, notes, data files (CSVs, spreadsheets, .dta files). **Copy, don't move.** Your originals stay where they are.
+
+## 4. Open the terminal inside VS Code
 
 - **Mac:** Press Cmd+` (the backtick key, above Tab)
 - **Windows:** Press Ctrl+` (same key, above Tab)
 
 A terminal panel should appear at the bottom of VS Code. This is where you'll run Claude Code.
 
-## 3. Create your research folder
-
-Type these commands into the terminal you just opened.
-
-**Mac:**
-```
-mkdir ~/Documents/dba-ai-research
-cd ~/Documents/dba-ai-research
-```
-
-**Windows (PowerShell):**
-```
-mkdir $HOME\Documents\dba-ai-research
-cd $HOME\Documents\dba-ai-research
-```
-
-## 4. Copy your files in
-
-Open Finder (Mac) or File Explorer (Windows) and copy your dissertation files into the `dba-ai-research` folder you just created.
-
-**Your workflow audit is required.** Find the `workflow-audit.md` file you created during Week 12 and copy it into this folder. Two of tonight's prompts reference it directly. If you can't find your local copy, download it from Brightspace.
-
-Also copy in anything else relevant to your research: papers, notes, data files (CSVs, spreadsheets, .dta files).
-
-**Copy, don't move.** Your originals stay where they are. This folder is a working copy.
-
-Then open it in VS Code: go to File > Open Folder and navigate to your `dba-ai-research` folder.
-
 ## 5. Start Claude Code
 
-In the VS Code terminal, type:
+In the terminal, type:
 
 ```
 claude
