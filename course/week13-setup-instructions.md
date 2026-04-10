@@ -30,8 +30,7 @@ Also copy in anything else relevant to your research that isn't already there: p
 
 ## 4. Open the terminal inside VS Code
 
-- **Mac:** Press Cmd+` (the backtick key, above Tab)
-- **Windows:** Press Ctrl+` (same key, above Tab)
+Go to the menu bar: **Terminal > New Terminal**
 
 A terminal panel should appear at the bottom of VS Code. This is where you'll run Claude Code.
 
