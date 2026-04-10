@@ -59,30 +59,16 @@ Quick test: ask Claude Code "What files are in this folder?" It should list what
 - Run `claude --version` in the terminal. If it says "command not found," Claude Code isn't installed yet. Follow the install guide at https://docs.anthropic.com/en/docs/claude-code/overview
 - If you see an auth prompt, sign in with your Claude Pro account.
 
-## 6. Connect Granola (your first MCP server)
+## 6. Connect Granola (your first connector)
 
-An MCP server is a bridge between Claude Code and another tool. This one connects Claude Code to your Granola meeting notes.
+A connector bridges Claude to an external tool. This one connects Claude to your Granola meeting notes. Because we're setting it up at claude.ai, it works everywhere you use Claude — web chat, desktop app, and Claude Code.
 
-First, exit Claude Code by typing `/exit` in the Claude Code session.
+1. Open https://claude.ai/customize/connectors in your browser
+2. Find **Granola** and click to enable it
+3. Sign in with your Granola account when prompted
 
-Then run this in your terminal:
+Test it by going back to Claude Code and asking: "Summarize my most recent Granola meeting."
 
-```
-claude mcp add --transport http granola https://mcp.granola.ai/mcp
-```
+If it pulls up your meeting notes, you're connected. After the break, you'll add a second connector for your research.
 
-Now start Claude Code again:
-
-```
-claude
-```
-
-Type `/mcp` inside Claude Code. You'll see a list of MCP servers. Select `granola`, then choose "Authenticate." Your browser will open — sign in with your Granola account.
-
-Test it by asking Claude Code: "Summarize my most recent Granola meeting."
-
-If it pulls up your meeting notes, you're connected. After the break, you'll add a second MCP server specific to your research.
-
-**If the browser doesn't open:** Look in the terminal output for a URL you can copy and paste into your browser manually.
-
-Reference: https://docs.granola.ai/help-center/sharing/integrations/mcp#claude-code
+**If Granola doesn't appear in the connector list:** Make sure you're signed into claude.ai with your Claude Pro account. Refresh the page and try again.

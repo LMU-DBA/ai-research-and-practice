@@ -1,6 +1,6 @@
 # Week 13 session guide — build your research command center
 
-Friday, April 10, 2026 | 5:30-9:00 PM | In person, LMU
+Friday, April 10, 2026 | 5:30-9:00 PM | Hilton 304, LMU
 
 ---
 
@@ -9,10 +9,10 @@ Friday, April 10, 2026 | 5:30-9:00 PM | In person, LMU
 | Time | What's happening |
 |------|-----------------|
 | 5:30 | Workflow audit debrief |
-| 5:50 | Environment setup (VS Code, research folder, Granola MCP) |
+| 5:50 | Environment setup (VS Code, research folder, Granola connector) |
 | 6:35 | Claude Code organizes your research context |
 | 6:50 | Break |
-| 7:05 | Find MCP plugins for your work |
+| 7:05 | Find connectors for your work |
 | 7:25 | Build time — work on your #1 bottleneck |
 | 8:25 | Install Superpowers |
 | 8:40 | Closing + homework |
@@ -48,12 +48,7 @@ cd $HOME\Documents\dba-ai-research
 claude
 ```
 
-**Connect Granola MCP** (exit Claude Code first with `/exit`):
-```
-claude mcp add --transport http granola https://mcp.granola.ai/mcp
-```
-
-Then start Claude Code again and type `/mcp` to authenticate.
+**Connect Granola:** Go to https://claude.ai/customize/connectors, find Granola, enable it, and sign in. This works across Claude web, desktop, and Claude Code.
 
 ---
 
@@ -69,16 +64,16 @@ to do. Then create a README.md that indexes each file and how it relates to my r
 unclear files and organize into subfolders if it makes sense.
 ```
 
-### Prompt 2: find MCP plugins for your work
+### Prompt 2: find connectors for your work
 
-Claude Code reads your workflow audit and recommends data connectors that match your bottlenecks. You pick one and install it.
+Claude Code reads your workflow audit and recommends connectors that match your bottlenecks. You pick one and enable it at claude.ai/customize/connectors — same way you set up Granola.
 
 The `@` symbol tells Claude Code to read a specific file as context. Type `@` and start typing `workflow` — it will autocomplete the path, even if the file moved during Prompt 1.
 
 ```text
-@workflow-audit.md Based on my bottlenecks and data sources, recommend plugins or data connectors
-I can install right now. For each one, explain what it connects to and how it helps my specific
-work. Then help me install whichever one I choose.
+@workflow-audit.md Based on my bottlenecks and data sources, recommend connectors I can enable at
+claude.ai/customize/connectors. For each one, explain what it connects to and how it helps my
+specific work. Then walk me through setting up whichever one I choose.
 ```
 
 ### Prompt 3: work on your #1 bottleneck

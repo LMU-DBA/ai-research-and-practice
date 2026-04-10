@@ -14,20 +14,20 @@ to do. Then create a README.md that indexes each file and how it relates to my r
 unclear files and organize into subfolders if it makes sense.
 ```
 
-## Prompt 2: find MCP plugins for your work
+## Prompt 2: find connectors for your work
 
 **When:** After the break (around 7:05).
 
-**What to expect:** Claude Code reads your workflow audit from the Week 12 assignment and recommends MCP servers (data source connectors) that match your bottlenecks. You pick one and install it.
+**What to expect:** Claude Code reads your workflow audit from the Week 12 assignment and recommends connectors that match your bottlenecks. You pick one and enable it at claude.ai/customize/connectors — same way you set up Granola.
 
 **How to use it:** Type the `@` symbol in Claude Code followed by the path to your workflow audit file. The `@` tells Claude Code to read that specific file as context. Start typing `@workflow` and it should autocomplete the path for you — handy if the file moved during Prompt 1.
 
 **Type this into Claude Code (adjust the path to match where your file is):**
 
 ```text
-@workflow-audit.md Based on my bottlenecks and data sources, recommend plugins or data connectors
-I can install right now. For each one, explain what it connects to and how it helps my specific
-work. Then help me install whichever one I choose.
+@workflow-audit.md Based on my bottlenecks and data sources, recommend connectors I can enable at
+claude.ai/customize/connectors. For each one, explain what it connects to and how it helps my
+specific work. Then walk me through setting up whichever one I choose.
 ```
 
 If Claude Code reorganized your files during Prompt 1, your audit may be in a subfolder. Type `@` and start typing `workflow` — Claude Code will show you matching files wherever they are.
