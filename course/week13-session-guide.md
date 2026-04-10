@@ -21,39 +21,17 @@ Friday, April 10, 2026 | 5:30-9:00 PM | Hilton 304
 
 ## Setup
 
-Full instructions: [week13-setup-instructions.md](week13-setup-instructions.md)
+Follow the setup instructions step by step: [week13-setup-instructions.md](week13-setup-instructions.md)
 
-Quick reference:
+By the end of setup you should have:
 
-**Create your research folder:**
-
-Mac:
-```
-mkdir ~/Documents/dba-ai-research
-cd ~/Documents/dba-ai-research
-```
-
-Windows:
-```
-mkdir $HOME\Documents\dba-ai-research
-cd $HOME\Documents\dba-ai-research
-```
-
-**Copy your files in.** Your `workflow-audit.md` from Week 12 is required - two of tonight's prompts reference it. If you can't find it, download from Brightspace. Also copy in research papers, data files, anything relevant. Copy, don't move. Originals stay where they are.
-
-**Open the folder in VS Code:** File > Open Folder > select `dba-ai-research`
-
-**Start Claude Code** in the VS Code terminal:
-```
-claude
-```
-
-**Connect Granola:** Go to https://claude.ai/customize/connectors, find Granola, enable it, and sign in. This works across Claude web, desktop, and Claude Code.
-
-**Install Superpowers** (inside your Claude Code session):
-```
-/plugin install superpowers@claude-plugins-official
-```
+1. VS Code installed and open
+2. Your `dba-ai-research` folder open in VS Code (you created this during Week 12)
+3. Your `workflow-audit.md` in the folder (required - two prompts tonight reference it. Download from Brightspace if you can't find it.)
+4. Your other research files copied in (papers, data, notes)
+5. Claude Code running in the VS Code terminal
+6. Granola connector enabled at https://claude.ai/customize/connectors
+7. Superpowers installed: `/plugin install superpowers@claude-plugins-official`
 
 ---
 
