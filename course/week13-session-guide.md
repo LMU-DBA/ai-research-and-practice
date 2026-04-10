@@ -73,7 +73,11 @@ Quick test: ask Claude Code "What files are in this folder?" It should list what
 - Run `claude --version` in the terminal. If it says "command not found," Claude Code isn't installed yet. Follow the install guide at https://docs.anthropic.com/en/docs/claude-code/overview
 - If you see an auth prompt, sign in with your Claude Pro account.
 
-### 6. Connect Granola (your first connector)
+### 6. Set output style to explanatory
+
+Type `/config` in Claude Code, select output style, and choose "explanatory." This tells Claude Code to explain its thinking as it works, not just show you the result. You'll learn more this way.
+
+### 7. Connect Granola (your first connector)
 
 A connector lets Claude pull data from another tool. This one gives Claude access to your [Granola](https://granola.ai) meeting notes. Because we're setting it up at claude.ai (the web chat), it works everywhere you use Claude, not just Claude Code.
 
@@ -85,7 +89,7 @@ Test it by going back to Claude Code and asking: "Summarize my most recent Grano
 
 If it pulls up your meeting notes, you're connected. After the break, you'll add a second connector for your research.
 
-### 7. Install Superpowers
+### 8. Install Superpowers
 
 Back in your Claude Code session, type:
 
