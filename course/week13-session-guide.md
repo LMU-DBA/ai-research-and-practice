@@ -47,7 +47,10 @@ Then open it in VS Code.
 
 Check VS Code's sidebar on the left. You should see your files from Week 12 listed there.
 
-**Your workflow audit is required.** Look for `workflow-audit.md` in the sidebar. Two of tonight's prompts reference it directly. If it's not there, download it from Brightspace and copy it in.
+**Your workflow audit is required.** Look for `workflow-audit.md` in the sidebar. Two of tonight's prompts reference it directly. If it's not there, download it from Brightspace and get it into the folder. Two easy ways:
+
+- Drag the file straight into VS Code's sidebar. It'll copy it in.
+- Or open the folder in Finder (Mac) or File Explorer (Windows) and drop it there. VS Code's sidebar is just showing you what's in that folder on your computer.
 
 Now gather everything related to your current research and copy it into this folder. Claude Code can only work with files it can see, so the more context you give it, the better it can help. Look through your Google Drive, Dropbox, OneDrive, desktop, Downloads folder, email attachments, wherever your stuff lives. Grab your research papers, literature reviews, data files (CSVs, spreadsheets, .dta, .sav files), drafts, notes, outlines, anything. If it's related to your dissertation, put a copy here.
 
