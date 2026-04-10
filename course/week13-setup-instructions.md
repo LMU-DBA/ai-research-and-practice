@@ -50,7 +50,7 @@ Quick test: ask Claude Code "What files are in this folder?" It should list what
 
 ## 6. Connect Granola (your first connector)
 
-A connector bridges Claude to an external tool. This one connects Claude to your Granola meeting notes. Because we're setting it up at claude.ai, it works everywhere you use Claude — web chat, desktop app, and Claude Code.
+A connector lets Claude pull data from another tool. This one gives Claude access to your Granola meeting notes. Because we're setting it up at claude.ai, it works everywhere you use Claude, not just Claude Code.
 
 1. Open https://claude.ai/customize/connectors in your browser
 2. Find **Granola** and click to enable it
@@ -70,6 +70,6 @@ Back in your Claude Code session, type:
 /plugin install superpowers@claude-plugins-official
 ```
 
-This changes how Claude Code approaches problems. It'll brainstorm, plan, and ask questions before jumping into solutions.
+This changes how Claude Code works. Instead of jumping straight to code, it'll think through the problem first.
 
 **If you get an error:** Try `/plugin update superpowers` instead.
