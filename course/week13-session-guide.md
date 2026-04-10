@@ -153,9 +153,7 @@ We'll agree on a plan before you build anything.
 
 ## If you get stuck
 
-Ask Claude Code first. Open your research folder, start a session, and describe what you're stuck on. It's there at 2 AM when Greg isn't.
-
-If Claude Code can't help, email Greg at gregory.lontok@lmu.edu or message him on Teams.
+Ask Claude Code first. Open your research folder, start a session, and describe what you're stuck on.
 
 ---
 
