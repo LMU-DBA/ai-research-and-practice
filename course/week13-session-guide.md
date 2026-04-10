@@ -71,7 +71,7 @@ Quick test: ask Claude Code "What files are in this folder?" It should list what
 
 ### 6. Connect Granola (your first connector)
 
-A connector lets Claude pull data from another tool. This one gives Claude access to your [Granola](https://granola.ai) meeting notes. Because we're setting it up at claude.ai, it works everywhere you use Claude, not just Claude Code.
+A connector lets Claude pull data from another tool. This one gives Claude access to your [Granola](https://granola.ai) meeting notes. Because we're setting it up at claude.ai (the web chat), it works everywhere you use Claude, not just Claude Code.
 
 1. Open https://claude.ai/customize/connectors in your browser
 2. Find **Granola** and click to enable it
