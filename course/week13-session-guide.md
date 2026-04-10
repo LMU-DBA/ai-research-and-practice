@@ -2,6 +2,8 @@
 
 Friday, April 10, 2026 | 5:30-9:00 PM | Hilton 304
 
+By the end of tonight, your research files will be organized, Claude will have access to your data, and you'll have a working start on your biggest bottleneck.
+
 ---
 
 ## Tonight's schedule
@@ -81,8 +83,6 @@ Test it by going back to Claude Code and asking: "Summarize my most recent Grano
 
 If it pulls up your meeting notes, you're connected. After the break, you'll add a second connector for your research.
 
-**If Granola doesn't appear in the connector list:** Make sure you're signed into claude.ai with your Claude Pro account. Refresh the page and try again.
-
 ### 7. Install Superpowers
 
 Back in your Claude Code session, type:
@@ -92,8 +92,6 @@ Back in your Claude Code session, type:
 ```
 
 [Superpowers](https://github.com/obra/superpowers) changes how Claude Code works. Instead of jumping straight to code, it'll think through the problem first.
-
-**If you get an error:** Try `/plugin update superpowers` instead.
 
 ---
 
