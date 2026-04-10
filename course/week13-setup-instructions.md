@@ -4,7 +4,7 @@
 
 Download from: https://code.visualstudio.com/Download
 
-- **Mac:** Download the .dmg for your chip. If you have an M1, M2, M3, or M4 Mac, pick "Apple Silicon." If you're not sure, pick "Universal." Open the .dmg and drag VS Code into your Applications folder.
+- **Mac:** Download the .dmg for your chip. If you have an M1, M2, M3, or M4 Mac, pick "Apple Silicon." If you're not sure, pick "Universal." Open the .dmg and drag [VS Code](https://code.visualstudio.com) into your Applications folder.
 - **Windows:** Download the "User Installer" for x64. Run the installer and accept the defaults.
 
 Open VS Code once it's installed.
@@ -32,7 +32,7 @@ Also copy in anything else relevant to your research that isn't already there: p
 
 Go to the menu bar: **Terminal > New Terminal**
 
-A terminal panel should appear at the bottom of VS Code. This is where you'll run Claude Code.
+A terminal panel should appear at the bottom of VS Code. This is where you'll run [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview).
 
 ## 5. Start Claude Code
 
@@ -50,7 +50,7 @@ Quick test: ask Claude Code "What files are in this folder?" It should list what
 
 ## 6. Connect Granola (your first connector)
 
-A connector lets Claude pull data from another tool. This one gives Claude access to your Granola meeting notes. Because we're setting it up at claude.ai, it works everywhere you use Claude, not just Claude Code.
+A connector lets Claude pull data from another tool. This one gives Claude access to your [Granola](https://granola.ai) meeting notes. Because we're setting it up at claude.ai, it works everywhere you use Claude, not just Claude Code.
 
 1. Open https://claude.ai/customize/connectors in your browser
 2. Find **Granola** and click to enable it
@@ -59,8 +59,6 @@ A connector lets Claude pull data from another tool. This one gives Claude acces
 Test it by going back to Claude Code and asking: "Summarize my most recent Granola meeting."
 
 If it pulls up your meeting notes, you're connected. After the break, you'll add a second connector for your research.
-
-**If Granola doesn't appear in the connector list:** Make sure you're signed into claude.ai with your Claude Pro account. Refresh the page and try again.
 
 ## 7. Install Superpowers
 
