@@ -8,7 +8,9 @@
 
 **Paste this into Claude Code:**
 
-> Scan all the files in this folder. Create a README.md that indexes everything: what each file is, what it contains, and how it relates to my research. Rename any files that have unclear names. Organize into subfolders if it makes sense. Explain what you're doing as you go.
+```text
+Scan all the files in this folder. Create a README.md that indexes everything: what each file is, what it contains, and how it relates to my research. Rename any files that have unclear names. Organize into subfolders if it makes sense. Explain what you're doing as you go.
+```
 
 ## Prompt 2: find MCP plugins for your work
 
@@ -18,16 +20,22 @@
 
 **Paste this into Claude Code:**
 
-> Read my workflow-audit.md file. Based on my bottlenecks and data sources, recommend MCP servers or Claude Code plugins that would help me. For each recommendation, explain what it connects to and how it would help my specific work. Then help me install whichever one I choose.
+```text
+Read my workflow-audit.md file. Based on my bottlenecks and data sources, recommend MCP servers or Claude Code plugins that would help me. For each recommendation, explain what it connects to and how it would help my specific work. Then help me install whichever one I choose.
+```
 
 ## Prompt 3: work on your #1 bottleneck
 
 **When:** Build time starts (around 7:25). You'll use this for the next hour.
 
-**What to expect:** Instead of jumping straight to a solution, this prompt tells Claude Code to interview you about your problem first. It'll ask questions, understand your situation, and propose an approach before building anything. Use Wispr Flow to speak your answers — you'll give better detail by talking than typing.
+**What to expect:** Claude Code will read your workflow audit, identify your biggest bottleneck, and ask you questions to understand the problem before proposing a solution. Use Wispr Flow to speak your answers — you'll give better detail by talking than typing.
 
-**Paste this first, then describe your bottleneck in your own words:**
+**How to use it:** Type the `@` symbol in Claude Code followed by the path to your workflow audit file. The `@` tells Claude Code to read that specific file as context. Start typing `@workflow` and it should autocomplete the path for you — handy if the file moved during Prompt 1.
 
-> Ask me questions until you understand my problem. Explore tangential ideas if they seem relevant. When you feel you have enough context, tell me your thinking. We'll plan together first, then implement based on complexity.
+**Type this into Claude Code (adjust the path to match where your file is):**
 
-After pasting that, tell Claude Code about the biggest bottleneck from your workflow audit. What takes the most time? What's tedious? What's blocking your progress? Just describe it however feels natural.
+```text
+@workflow-audit.md Identify my #1 bottleneck — the thing that takes the most time or is blocking my progress. Ask me questions until you understand the problem well enough to help. When you feel you have enough context, tell me your thinking. We'll plan together first, then implement based on complexity.
+```
+
+If Claude Code reorganized your files during Prompt 1, your audit may be in a subfolder. Type `@` and start typing `workflow` — Claude Code will show you matching files wherever they are.
