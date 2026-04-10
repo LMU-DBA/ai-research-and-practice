@@ -26,7 +26,7 @@ Follow the setup instructions step by step: [week13-setup-instructions.md](week1
 By the end of setup you should have:
 
 1. VS Code installed and open
-2. Your `dba-ai-research` folder open in VS Code (you created this during Week 12)
+2. Your `ai-research-and-practice` folder open in VS Code (you created this during Week 12)
 3. Your `workflow-audit.md` in the folder (required - two prompts tonight reference it. Download from Brightspace if you can't find it.)
 4. Your other research files copied in (papers, data, notes)
 5. Claude Code running in the VS Code terminal
@@ -95,7 +95,7 @@ This creates a `CLAUDE.md` file in your research folder. It's a configuration fi
 
 Two things to do before your 1-on-1 meeting:
 
-1. **Sync your research folder to cloud backup.** Your `dba-ai-research` folder needs to be synced to Google Drive, Dropbox, iCloud, Box, or OneDrive. Greg will ask for proof — a screenshot or live demo. If you need help setting this up, reach out.
+1. **Sync your research folder to cloud backup.** Your `ai-research-and-practice` folder needs to be synced to Google Drive, Dropbox, iCloud, Box, or OneDrive. Greg will ask for proof — a screenshot or live demo. If you need help setting this up, reach out.
 
 2. **Keep Granola running in your meetings.** You need 1-2 weeks of meeting transcripts for the self-assessment prompt to work well. Just leave it running.
 
@@ -112,7 +112,7 @@ You must meet with Greg at least twice during the three-week window.
 **Schedule here:** https://calendly.com/greg-lontok/dba-ai-1-on-1
 
 **What to have ready:**
-- `dba-ai-research` folder synced to cloud backup (bring proof)
+- `ai-research-and-practice` folder synced to cloud backup (bring proof)
 - Your workflow audit reviewed
 - Superpowers installed (if you didn't finish tonight, we'll do it together)
 - Questions or blockers you've hit

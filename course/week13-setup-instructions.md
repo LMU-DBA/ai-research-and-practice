@@ -11,12 +11,12 @@ Open VS Code once it's installed.
 
 ## 2. Open your research folder
 
-You created a `dba-ai-research` folder during Week 12. Open it in VS Code: go to File > Open Folder and navigate to `Documents/dba-ai-research`.
+You created an `ai-research-and-practice` folder during Week 12. Open it in VS Code: go to File > Open Folder and navigate to `Documents/ai-research-and-practice`.
 
 If you don't have the folder yet, create it first:
 
-- **Mac:** Open Finder, go to Documents, create a new folder called `dba-ai-research`
-- **Windows:** Open File Explorer, go to Documents, create a new folder called `dba-ai-research`
+- **Mac:** Open Finder, go to Documents, create a new folder called `ai-research-and-practice`
+- **Windows:** Open File Explorer, go to Documents, create a new folder called `ai-research-and-practice`
 
 Then open it in VS Code.
 
@@ -62,3 +62,15 @@ Test it by going back to Claude Code and asking: "Summarize my most recent Grano
 If it pulls up your meeting notes, you're connected. After the break, you'll add a second connector for your research.
 
 **If Granola doesn't appear in the connector list:** Make sure you're signed into claude.ai with your Claude Pro account. Refresh the page and try again.
+
+## 7. Install Superpowers
+
+Back in your Claude Code session, type:
+
+```
+/plugin install superpowers@claude-plugins-official
+```
+
+This changes how Claude Code approaches problems. It'll brainstorm, plan, and ask questions before jumping into solutions.
+
+**If you get an error:** Try `/plugin update superpowers` instead.
