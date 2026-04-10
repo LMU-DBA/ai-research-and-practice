@@ -2,7 +2,7 @@
 
 ## Prompt 1: organize your research context
 
-**When:** After you've copied your files into the research folder and Claude Code is running (around 6:35).
+**When:** After the break, once setup is done (around 7:05).
 
 **What to expect:** Claude Code reads every file in your folder, figures out what each one is, and creates a README that indexes everything. It may rename files or move things into subfolders. Watch VS Code's file explorer sidebar on the left. You'll see it update in real time.
 
@@ -16,7 +16,7 @@ unclear files and organize into subfolders if it makes sense.
 
 ## Prompt 2: find connectors for your work
 
-**When:** After the break (around 7:05).
+**When:** After Prompt 1 (around 7:20).
 
 **What to expect:** Claude Code reads your workflow audit from the Week 12 assignment and recommends connectors that match your bottlenecks. You pick one and enable it at claude.ai/customize/connectors — same way you set up Granola.
 
@@ -34,7 +34,7 @@ If Claude Code reorganized your files during Prompt 1, your audit may be in a su
 
 ## Prompt 3: work on your #1 bottleneck
 
-**When:** Build time starts (around 7:25). You'll use this for the next hour.
+**When:** Build time starts (around 7:40). You'll use this for the next hour.
 
 **What to expect:** Claude Code reads your workflow audit, finds your biggest bottleneck, and asks you questions before proposing anything. Use Wispr Flow to speak your answers. You'll say more than you'd type.
 

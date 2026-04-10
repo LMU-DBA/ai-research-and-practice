@@ -1,6 +1,6 @@
-# Week 13 session guide — build your research command center
+# Week 13 session guide - build your research command center
 
-Friday, April 10, 2026 | 5:30-9:00 PM | Hilton 304, LMU
+Friday, April 10, 2026 | 5:30-9:00 PM | Hilton 304
 
 ---
 
@@ -8,13 +8,13 @@ Friday, April 10, 2026 | 5:30-9:00 PM | Hilton 304, LMU
 
 | Time | What's happening |
 |------|-----------------|
-| 5:30 | Workflow audit debrief |
-| 5:50 | Environment setup (VS Code, research folder, Granola connector) |
-| 6:35 | Claude Code organizes your research context |
+| 5:30 | Presentation |
+| 5:50 | Workflow audit debrief |
+| 6:05 | Environment setup (VS Code, research folder, Granola connector, Superpowers) |
 | 6:50 | Break |
-| 7:05 | Find connectors for your work |
-| 7:25 | Build time — work on your #1 bottleneck |
-| 8:25 | Install Superpowers |
+| 7:05 | Claude Code organizes your research context |
+| 7:20 | Find connectors for your work |
+| 7:40 | Build time - work on your #1 bottleneck |
 | 8:40 | Closing + homework |
 
 ---
@@ -49,6 +49,11 @@ claude
 ```
 
 **Connect Granola:** Go to https://claude.ai/customize/connectors, find Granola, enable it, and sign in. This works across Claude web, desktop, and Claude Code.
+
+**Install Superpowers** (inside your Claude Code session):
+```
+/plugin install superpowers@claude-plugins-official
+```
 
 ---
 
