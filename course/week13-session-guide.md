@@ -72,10 +72,6 @@ claude
 
 Quick test: ask Claude Code "What files are in this folder?" It should list whatever you just copied in.
 
-**If Claude Code doesn't start:**
-- Run `claude --version` in the terminal. If it says "command not found," Claude Code isn't installed yet. Follow the install guide at https://docs.anthropic.com/en/docs/claude-code/overview
-- If you see an auth prompt, sign in with your Claude Pro account.
-
 ### 6. Set output style to explanatory
 
 Type `/config` in Claude Code, select output style, and choose "explanatory." This tells Claude Code to explain its thinking as it works, not just show you the result. You'll learn more this way.
