@@ -68,6 +68,4 @@ Back in your Claude Code session, type:
 /plugin install superpowers@claude-plugins-official
 ```
 
-[Superpowers](https://github.com/anthropics/claude-code-plugins/tree/main/superpowers) changes how Claude Code works. Instead of jumping straight to code, it'll think through the problem first.
-
-**If you get an error:** Try `/plugin update superpowers` instead.
+[Superpowers](https://github.com/obra/superpowers) changes how Claude Code works. Instead of jumping straight to code, it'll think through the problem first.
