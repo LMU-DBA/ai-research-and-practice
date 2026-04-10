@@ -34,12 +34,11 @@ cd $HOME\Documents\dba-ai-research
 
 ## 4. Copy your files in
 
-Open Finder (Mac) or File Explorer (Windows) and copy your dissertation files into the `dba-ai-research` folder you just created. Grab anything relevant:
+Open Finder (Mac) or File Explorer (Windows) and copy your dissertation files into the `dba-ai-research` folder you just created.
 
-- Research papers and notes
-- Data files (CSVs, spreadsheets, .dta files)
-- Your workflow-audit.md from the Week 12 assignment
-- Anything else related to your dissertation
+**Your workflow audit is required.** Find the `workflow-audit.md` file you created during Week 12 and copy it into this folder. Two of tonight's prompts reference it directly. If you can't find your local copy, download it from Brightspace.
+
+Also copy in anything else relevant to your research: papers, notes, data files (CSVs, spreadsheets, .dta files).
 
 **Copy, don't move.** Your originals stay where they are. This folder is a working copy.
 

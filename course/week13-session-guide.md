@@ -39,7 +39,7 @@ mkdir $HOME\Documents\dba-ai-research
 cd $HOME\Documents\dba-ai-research
 ```
 
-**Copy your dissertation files in.** Research papers, data files, your workflow audit — anything relevant. Copy, don't move. Originals stay where they are.
+**Copy your files in.** Your `workflow-audit.md` from Week 12 is required - two of tonight's prompts reference it. If you can't find it, download from Brightspace. Also copy in research papers, data files, anything relevant. Copy, don't move. Originals stay where they are.
 
 **Open the folder in VS Code:** File > Open Folder > select `dba-ai-research`
 
@@ -98,6 +98,18 @@ an approach. We'll agree on a plan before you build anything.
 Ask Claude Code first. Open your research folder, start a session, and describe what you're stuck on. It's there at 2 AM when Greg isn't.
 
 If Claude Code can't help, email Greg at gregory.lontok@lmu.edu or message him on Teams.
+
+---
+
+## Before you leave: create your CLAUDE.md
+
+Run this inside your Claude Code session:
+
+```
+/init
+```
+
+This creates a `CLAUDE.md` file in your research folder. It's a configuration file that tells Claude Code about your project - what you're working on, what tools you use, and how you prefer to work. Every time you start a new Claude Code session in this folder, it reads this file first. Think of it as giving Claude Code a memory of your project so you don't have to re-explain things each time.
 
 ---
 
