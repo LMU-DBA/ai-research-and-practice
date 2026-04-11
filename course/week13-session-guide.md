@@ -11,12 +11,12 @@ By the end of tonight, your research files will be organized, Claude will have a
 | Time | What's happening |
 |------|-----------------|
 | 5:30 | Presentation |
-| 5:50 | Workflow audit debrief |
-| 6:05 | Environment setup (VS Code, research folder, Granola connector, Superpowers) |
+| 5:55 | Workflow audit debrief |
+| 6:10 | Environment setup (VS Code, research folder, Granola connector, Superpowers) |
 | 6:50 | Break |
 | 7:05 | Claude Code organizes your research context |
 | 7:20 | Find connectors for your work |
-| 7:40 | Build time - work on your #1 bottleneck |
+| 7:40 | Build time - work on your biggest dissertation bottleneck |
 | 8:40 | Closing + homework |
 
 ---
