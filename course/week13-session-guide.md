@@ -173,7 +173,7 @@ This creates a `CLAUDE.md` file in your research folder. It's a configuration fi
 
 Two things to do before your 1-on-1 meeting:
 
-1. **Sync your research folder to cloud backup.** Your `ai-research-and-practice` folder needs to be synced to Google Drive, Dropbox, iCloud, Box, or OneDrive. Greg will ask for proof — a screenshot or live demo. If you need help setting this up, reach out.
+1. **Sync your research folder to cloud backup.** Your `ai-research-and-practice` folder needs to be synced to Google Drive, Dropbox, iCloud, Box, or OneDrive. We'll confirm the backup during your 1-on-1. If you need help setting this up, reach out.
 
 2. **Keep Granola running in your meetings.** You need 1-2 weeks of meeting transcripts for the self-assessment prompt to work well. Just leave it running.
 
@@ -185,7 +185,7 @@ Two things to do before your 1-on-1 meeting:
 
 Individual meetings where we go deep on your specific bottleneck. Come prepared with your workflow audit, your research folder, and any questions or blockers.
 
-You must meet with Greg at least twice during the three-week window.
+You must schedule at least two 1-on-1s during the three-week window.
 
 **Schedule here:** https://calendly.com/greg-lontok/dba-ai-1-on-1
 
