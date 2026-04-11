@@ -134,6 +134,8 @@ connects to and how it helps. Then walk me through setting up whichever one I ch
 
 If Claude Code reorganized your files during Prompt 1, your audit may be in a subfolder. Type `@` and start typing `workflow` — Claude Code will show you matching files wherever they are.
 
+If you don't find a useful connector at claude.ai/customize/connectors, ask Claude Code to expand its search to other sources.
+
 ### Prompt 3: work on your biggest dissertation bottleneck
 
 **When:** Build time starts. You'll use this for the rest of the session.
