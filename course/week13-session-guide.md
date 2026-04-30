@@ -201,4 +201,6 @@ You must schedule at least two 1-on-1s during the three-week window.
 
 **Friday, May 8 | 9:00-10:30 AM | Zoom:** https://lmula.zoom.us/my/lontok
 
-Present your workflow and its output to the class. Live demo, show what you built, Q&A.
+Each student gets 12 minutes: 8 minutes to demo, 4 minutes for Q&A. Order is alphabetical by first name.
+
+Two deliverables: a markdown summary submitted to Brightspace by 9:00 AM (start of class) and a live demo. See the syllabus for the full prep instructions and the markdown template.
