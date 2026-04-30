@@ -151,7 +151,7 @@ Present your workflow and its output to the class. Each student gets 12 minutes:
    What you'd improve with more time.
    ```
 
-2. **Live demo (8 minutes).** Walk us through your workflow. Running it live is great if you can, but not required. At minimum, pull up your inputs, show the steps, and show the output. You don't have to actually execute a script or run a prompt if it's risky.
+2. **Live demo (8 minutes).** Walk us through your workflow. Running it live is great if you can, but not required. At minimum, pull up your inputs, show the steps, and show the output. You don't have to actually execute a script or run a prompt if it's risky. Slides are optional — present straight from your workflow files and output if you prefer.
 
 **What "the output" means:**
 
@@ -171,7 +171,6 @@ Pick whatever fits your work. Name it in the markdown summary.
 - Zoom screen-share works on the device you'll present from
 - Output file is open in a tab and ready to show
 - Connectors and tools you plan to demo are signed in
-- Have a screenshot or recorded clip ready in case a live step fails
 
 **What I'm grading:**
 - Clarity of the workflow story (problem, inputs, steps, output)
