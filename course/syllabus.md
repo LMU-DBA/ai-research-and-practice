@@ -139,10 +139,10 @@ Present your workflow and its output to the class. Each student gets 12 minutes:
    What you're trying to do better at work or in your research.
 
    ## Inputs
-   Data sources and connectors.
+   Data sources, connectors, tools.
 
    ## Steps
-   What the workflow does, in order. Name the tools you use at each step.
+   What the workflow does, in order.
 
    ## Output
    What it produces.
