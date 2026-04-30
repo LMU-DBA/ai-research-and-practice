@@ -175,7 +175,6 @@ Pick whatever fits your work. Name it in the markdown summary.
 **What I'm grading:**
 - Clarity of the workflow story (problem, inputs, steps, output)
 - Fit to your real work
-- Polish and slide design don't matter
 
 ---
 
