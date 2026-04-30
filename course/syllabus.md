@@ -55,7 +55,7 @@ Based on [MIT Sloan research](https://mitsloan.mit.edu/ideas-made-to-matter/a-ne
 
 ### Week 11: Introductions and context engineering (Mar 27)
 
-Meet each other. See AI tools in action. Understand context engineering.
+Get to know each other and see AI tools in action. Context engineering is the throughline.
 
 **In class:**
 - Student introductions: who you are, your dissertation focus, your day job, where you see AI fitting in
@@ -151,7 +151,7 @@ Present your workflow and its output to the class. Each student gets 12 minutes:
    What you'd improve with more time.
    ```
 
-2. **Live demo (8 minutes).** Walk us through your workflow. Running it live is great if you can, but not required. At minimum, pull up your inputs, show the steps, and show the output. You don't have to actually execute a script or run a prompt if it's risky. Slides are optional — present straight from your workflow files and output if you prefer.
+2. **Live demo (8 minutes).** Walk us through your workflow. Running it live is great if you can, but not required. At minimum, pull up your inputs, show the steps, and show the output. You don't have to actually execute a script or run a prompt if it's risky. Slides are optional. Present straight from your workflow files and output if you prefer.
 
 **What "the output" means:**
 
@@ -175,7 +175,7 @@ Pick whatever fits your work. Name it in the markdown summary.
 **What I'm grading:**
 - Clarity of the workflow story (problem, inputs, steps, output)
 - Fit to your real work
-- Not polish, not slide design
+- Polish and slide design don't matter
 
 ---
 
